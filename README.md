@@ -11,3 +11,10 @@
 - [ ] Highlight the key findings and aspects of the work
 - [ ] Discuss the pros/cons at a very high level
 
+## Related Work
+- [ ] Throw light on the review carried out by the paper
+- [ ] Emphasize on the pros/cons of previous works and how the paper has improved upon it
+- [ ] Point out some of the open areas which the work discusses/touches upon
+- [ ] Towards the end, discuss what could be improved from a literature point of view (more specifically highlight what has been done following the paper)
+
+## Method-1
