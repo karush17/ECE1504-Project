@@ -26,3 +26,12 @@
 ## Mthod-2
 Exactly same as Method-1
 
+## Application Areas
+- [ ] Have a braod discussion about the applictions, experiments, important findidngs of the work.
+- [ ] Involve the reader into the goods and bads of the setup, its specifications, why is it essential from an application perspective.
+- [ ] Lay out some possible areas of expansion or scenarios where the approach would work/perform bettter
+- [ ] End the discussion by commenting upon the applicability of methods to practical settings (emphasize on how these translate to real life)
+
+
+
+
