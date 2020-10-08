@@ -7,6 +7,7 @@
 - [ ] [Modeling Interaction via the Principle of Maximum Causal Entropy](https://www.cs.cmu.edu/~bziebart/publications/maximum-causal-entropy.pdf)
 
 ## Introduction
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Walk over the high level ideas in the paper and inform the reader about what they emphasize on
+- [ ] Highlight the key findings and aspects of the work
+- [ ] Discuss the pros/cons at a very high level
+
