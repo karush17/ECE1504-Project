@@ -23,7 +23,7 @@
 - [ ] Inform the reader about something which is critical or novel, highlight if the authors missed something or a potential gap which arises
 - [ ] Lay out potential problems (if any) with the approach or any scenarios in which it may not work well
 
-## Mthod-2
+## Method-2
 Exactly same as Method-1
 
 ## Application Areas
@@ -32,6 +32,9 @@ Exactly same as Method-1
 - [ ] Lay out some possible areas of expansion or scenarios where the approach would work/perform bettter
 - [ ] End the discussion by commenting upon the applicability of methods to practical settings (emphasize on how these translate to real life)
 
-
+## Conclusion
+- [ ] Wrap up with your own conclusion of the papers and their scope for future research
+- [ ] Do not forget to highlight the key pros/cons of the work
+- [ ] Sum up theoretical guarantees, practical findings and the new directions
 
 
