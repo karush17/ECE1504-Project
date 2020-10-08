@@ -23,3 +23,6 @@
 - [ ] Inform the reader about something which is critical or novel, highlight if the authors missed something or a potential gap which arises
 - [ ] Lay out potential problems (if any) with the approach or any scenarios in which it may not work well
 
+## Mthod-2
+Exactly same as Method-1
+
