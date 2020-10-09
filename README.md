@@ -18,7 +18,7 @@
 - [ ] Towards the end, discuss what could be improved from a literature point of view (more specifically highlight what has been done following the paper)
 
 ## Method-1
-- [ ] Discuss in detail the first method, its specifications, general discussions, comments , strengths, weaknesses, etc.
+- [ ] Discuss in detail the first method, its specifications, general discussions, comments, strengths, weaknesses, etc.
 - [ ] This section should consist of all the goods and bads of the paper and proper reasoning as provided by the authors
 - [ ] Inform the reader about something which is critical or novel, highlight if the authors missed something or a potential gap which arises
 - [ ] Lay out potential problems (if any) with the approach or any scenarios in which it may not work well
