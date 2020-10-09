@@ -38,3 +38,8 @@ Exactly same as Method-1
 - [ ] Sum up theoretical guarantees, practical findings and the new directions
 
 
+## OFFICE HOUR
+- [ ] Part 2, Problem 5 (c). Shouldn't the exponent be having a negative sign?
+- [ ] Part 1, Problem 9 Part 1. Do we sketch the example in X space or Z space?
+- [ ] The problem sets are indeed quite difficult. Would you have any suggestions on how to approach the problems?
+
