@@ -37,4 +37,3 @@ Exactly same as Method-1
 - [ ] Do not forget to highlight the key pros/cons of the work
 - [ ] Sum up theoretical guarantees, practical findings and the new directions
 
-
