@@ -39,7 +39,7 @@ Exactly same as Method-1
 
 
 ## OFFICE HOUR
-- [ ] Part 2, Problem 5 (c). Shouldn't the exponent be having a negative sign?
-- [ ] Part 1, Problem 9 Part 1. Do we sketch the example in X space or Z space?
-- [ ] The problem sets are indeed quite difficult. Would you have any suggestions on how to approach the problems?
+- [ ] Part 2, Problem 6 Part (b) and (c). Do not have a very good idea where to start? Can the leave one out error be equal to the training error?
+- [ ] Part 1, Problem 6 (2.13) Part (c). This is a union bound but how to assess the tightness of it?
+- [ ] Part 1, Problem 7 (2.14) Part (c). No idea how to approach it? The results from the above two parts are not being directly used?
 
