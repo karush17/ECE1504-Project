@@ -1,8 +1,7 @@
 # ECE1504 Projct
 
 ## Potential Papers
-- [ ] [The Information Bottleneck Method](https://arxiv.org/pdf/physics/0004057.pdf)
-- [ ] [Tightening Mutual Information Based Bounds on Generalization Error](https://sci-hub.do/https://ieeexplore.ieee.org/abstract/document/9080064)
+
 
 ## Introduction
 - [ ] Walk over the high-level ideas in the paper and inform the reader about what they emphasize on
