@@ -2,6 +2,7 @@
 
 ## Potential Papers
 - [ ] [Modeling Interaction via the Principle of Maximum Causal Entropy](http://www.cs.cmu.edu/~bziebart/publications/maximum-causal-entropy.pdf)
+- [ ] [On Variational Bounds of Mutual Information](https://arxiv.org/pdf/1905.06922.pdf)
 - [ ] [Dependence Measures Bounding the Exploration Bias for General Measurements](https://arxiv.org/pdf/1612.05845.pdf)
 
 ## Introduction
