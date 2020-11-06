@@ -2,6 +2,7 @@
 from __future__ import print_function
 
 import sys
+import pickle
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -169,7 +170,7 @@ for epoch in range(start_epoch, start_epoch+200):
     val_loss, avg_loss = train(epoch)
     top1, top5 = kNN(epoch, net, lemniscate, trainloader, testloader, 200, args.nce_t, 0)
     acc = top1
-    
+
     if acc > best_acc:
         print('Saving..')
         state = {
