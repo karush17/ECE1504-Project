@@ -155,11 +155,21 @@ def train(epoch):
               'Data: {data_time.val:.3f} ({data_time.avg:.3f}) '
               'Loss: {train_loss.val:.4f} ({train_loss.avg:.4f})'.format(
               epoch, batch_idx, len(trainloader), batch_time=batch_time, data_time=data_time, train_loss=train_loss))
+    return train_loss.val, train_loss.avg
+
+
+epoch_list = []
+val_loss_list = []
+avg_loss_list = []
+top1_list = []
+top5_list = []
+best_list = []
 
 for epoch in range(start_epoch, start_epoch+200):
-    train(epoch)
-    acc = kNN(epoch, net, lemniscate, trainloader, testloader, 200, args.nce_t, 0)
-
+    val_loss, avg_loss = train(epoch)
+    top1, top5 = kNN(epoch, net, lemniscate, trainloader, testloader, 200, args.nce_t, 0)
+    acc = top1
+    
     if acc > best_acc:
         print('Saving..')
         state = {
@@ -174,6 +184,24 @@ for epoch in range(start_epoch, start_epoch+200):
         best_acc = acc
 
     print('best accuracy: {:.2f}'.format(best_acc*100))
+
+    epoch_list.append(epoch)
+    val_loss_list.append(val_loss)
+    avg_loss_list.append(avg_loss)
+    top1_list.append(top1)
+    top5_list.append(top5)
+    best_list.append(best_acc)
+
+    data_save = {}
+    data_save['epoch'] = epoch_list
+    data_save['val_loss'] = val_loss_list
+    data_save['avg_loss'] = avg_loss_list
+    data_save['top1_acc'] = top1_list
+    data_save['top5_acc'] = top5_list
+    data_save['best_acc'] = best_list
+    with open('log.pkl', 'wb') as f: #data+same as frame folder
+        pickle.dump(data_save, f)
+
 
 acc = kNN(0, net, lemniscate, trainloader, testloader, 200, args.nce_t, 1)
 print('last accuracy: {:.2f}'.format(acc*100))
