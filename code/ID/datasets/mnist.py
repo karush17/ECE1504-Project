@@ -32,7 +32,7 @@ class MNISTInstance(datasets.MNIST):
         return img, target, index
 
 
-class MNISTInstance(datasets.FashionMNIST):
+class FashionMNISTInstance(datasets.FashionMNIST):
     """MNIST Instance Dataset.
     """
 
