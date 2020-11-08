@@ -20,7 +20,8 @@ import time
 import models
 import datasets
 import math
-from datasets.mnist import MNISTInstance
+from datasets.mnist import MNISTInstance,EMNISTInstance,FashionMNISTInstance
+from datasets.cifar import CIFAR10Instance,CIFAR100Instance
 from lib.NCEAverage import NCEAverage
 from lib.LinearAverage import LinearAverage
 from lib.NCECriterion import NCECriterion
@@ -62,10 +63,10 @@ transform_test = transforms.Compose([
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
 ])
 # split='letters',
-trainset = MNISTInstance(root='./data', train=True, download=True, transform=transform_train) #train=True
+trainset = EMNISTInstance(root='./data', split='letters', train=True, download=True, transform=transform_train) #train=True
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=128, shuffle=True, num_workers=2)
 
-testset = MNISTInstance(root='./data', train=False, download=True, transform=transform_test)
+testset = EMNISTInstance(root='./data', split='letters', train=False, download=True, transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=2)
 
 classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
@@ -202,7 +203,7 @@ for epoch in range(start_epoch, start_epoch+200):
     data_save['top1_acc'] = top1_list
     data_save['top5_acc'] = top5_list
     data_save['best_acc'] = best_list
-    with open('log.pkl', 'wb') as f: #data+same as frame folder
+    with open('log-emnist.pkl', 'wb') as f: #data+same as frame folder
         pickle.dump(data_save, f)
 
 

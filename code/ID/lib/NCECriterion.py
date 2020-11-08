@@ -10,7 +10,6 @@ class NCECriterion(nn.Module):
         self.nLem = nLem
 
     def forward(self, x, targets):
-        print(x.shape,targets.shape)
         batchSize = x.size(0)
         K = x.size(1)-1
         Pnt = 1 / float(self.nLem)
