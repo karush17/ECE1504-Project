@@ -1,5 +1,5 @@
 import torch
-from torch.autograd import Function
+from torch.autograd import Function, Variable
 from torch import nn
 from .alias_multinomial import AliasMethod
 import math
@@ -17,23 +17,25 @@ class NCEFunction(Function):
         inputSize = memory.size(1)
 
         # sample positives & negatives
-        idx.select(1,0).copy_(y.data)
+        idx.select(1,0).copy_(y)
 
         # sample correspoinding weights
         weight = torch.index_select(memory, 0, idx.view(-1))
-        weight.resize_(batchSize, K+1, inputSize)
+        weight = weight.reshape(batchSize, K+1, inputSize)
 
         # inner product
-        out = torch.bmm(weight, x.data.resize_(batchSize, inputSize, 1))
+        with torch.no_grad():
+            x_resize = Variable(x.clone().reshape(batchSize, inputSize, 1), requires_grad=False)
+        out = torch.bmm(weight, x_resize)
         out.div_(T).exp_() # batchSize * self.K+1
-        x.data.resize_(batchSize, inputSize)
+        # x.data.resize_(batchSize, inputSize)
 
         if Z < 0:
             params[2] = out.mean() * outputSize
             Z = params[2].item()
             print("normalization constant Z is set to {:.1f}".format(Z))
 
-        out.div_(Z).resize_(batchSize, K+1)
+        out = out.div_(Z).squeeze(2)
 
         self.save_for_backward(x, memory, y, weight, out, params)
 
@@ -49,20 +51,20 @@ class NCEFunction(Function):
         batchSize = gradOutput.size(0)
         
         # gradients d Pm / d linear = exp(linear) / Z
-        gradOutput.data.mul_(out.data)
+        gradOutput.mul_(out)
         # add temperature
-        gradOutput.data.div_(T)
+        gradOutput.div_(T)
 
-        gradOutput.data.resize_(batchSize, 1, K+1)
+        gradOutput = gradOutput.reshape(batchSize, 1, K+1)
         
         # gradient of linear
-        gradInput = torch.bmm(gradOutput.data, weight)
+        gradInput = torch.bmm(gradOutput, weight)
         gradInput.resize_as_(x)
 
         # update the non-parametric data
         weight_pos = weight.select(1, 0).resize_as_(x)
         weight_pos.mul_(momentum)
-        weight_pos.add_(torch.mul(x.data, 1-momentum))
+        weight_pos.add_(torch.mul(x, 1-momentum))
         w_norm = weight_pos.pow(2).sum(1, keepdim=True).pow(0.5)
         updated_weight = weight_pos.div(w_norm)
         memory.index_copy_(0, y, updated_weight)

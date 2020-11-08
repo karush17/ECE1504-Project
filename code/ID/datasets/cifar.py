@@ -40,3 +40,6 @@ class CIFAR100Instance(CIFAR10Instance):
     test_list = [
         ['test', 'f0ef6b0ae62326f3e7ffdfab6717acfc'],
     ]
+
+
+
