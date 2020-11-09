@@ -98,14 +98,14 @@ if args.test_only or len(args.resume)>0:
 # define loss function
 if hasattr(lemniscate, 'K'):
     print('Using NCE')
-    # criterion = NCECriterion(ndata)
+    criterion = NCECriterion(ndata)
 else:
     print('Using Cross Entropy')
     criterion = nn.CrossEntropyLoss()
 
 net.to(device)
 lemniscate.to(device)
-# criterion.to(device)
+criterion.to(device)
 
 if args.test_only:
     acc = kNN(0, net, lemniscate, trainloader, testloader, 200, args.nce_t, 1)
@@ -143,8 +143,8 @@ def train(epoch):
 
         features = net(inputs)
         outputs, memory = lemniscate(features, indexes)
-        # loss = criterion(outputs, indexes)
-        loss = fenchel_dual_loss(features, inputs, measure='JSD')
+        loss = criterion(outputs, indexes)
+        # loss = fenchel_dual_loss(features, inputs, measure='W1')
 
         loss.backward()
         optimizer.step()

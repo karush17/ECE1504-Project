@@ -130,7 +130,10 @@ class NCECriterion(nn.Module):
         lnPmtsum = lnPmt.sum(0)
         lnPonsum = lnPon.view(-1, 1).sum(0)
         
-        loss = - (lnPmtsum + lnPonsum) / batchSize
+        loss_temp = - (lnPmtsum + lnPonsum) / batchSize
+        E_pos = get_positive_expectation(loss_temp, measure='JSD', average=False)
+        E_neg = get_negative_expectation(loss_temp, measure='JSD', average=False)
+        loss = E_neg - E_pos
         
         return loss
 
