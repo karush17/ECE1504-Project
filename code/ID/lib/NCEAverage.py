@@ -89,5 +89,5 @@ class NCEAverage(nn.Module):
         batchSize = x.size(0)
         idx = self.multinomial.draw(batchSize * (self.K+1)).view(batchSize, -1)
         out = NCEFunction.apply(x, y, self.memory, idx, self.params)
-        return out
+        return out, self.memory
 
