@@ -170,7 +170,7 @@ top1_list = []
 top5_list = []
 best_list = []
 
-for epoch in range(start_epoch, start_epoch+200):
+for epoch in range(start_epoch, start_epoch+600):
     val_loss, avg_loss = train(epoch)
     top1, top5 = kNN(epoch, net, lemniscate, trainloader, testloader, 200, args.nce_t, 0)
     acc = top1
