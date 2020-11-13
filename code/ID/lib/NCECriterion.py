@@ -69,7 +69,7 @@ def get_negative_expectation(q_samples, measure, average=True):
     elif measure == 'RKL':
         Eq = q_samples - 1.
     elif measure == 'DV':
-        Eq = log_sum_exp(q_samples, 0) - math.log(q_samples.size(0))
+        Eq = torch.logsumexp(q_samples, 0) - math.log(q_samples.size(0)+1e-1)
     elif measure == 'H2':
         Eq = torch.exp(q_samples) - 1.
     elif measure == 'W1':
@@ -131,10 +131,10 @@ class NCECriterion(nn.Module):
         lnPonsum = lnPon.view(-1, 1).sum(0)
         
         loss_temp = - (lnPmtsum + lnPonsum) / batchSize
-        # E_pos = get_positive_expectation(loss_temp, measure='RKL', average=False)
-        # E_neg = get_negative_expectation(loss_temp, measure='RKL', average=False)
-        E_pos = lnPmt.sum(0)
-        E_neg = torch.log(torch.exp(lnPonsum).sum()+1e6)
+        # E_pos = get_positive_expectation(loss_temp, measure='DV', average=False)
+        # E_neg = get_negative_expectation(loss_temp, measure='DV', average=False)
+        E_pos = lnPmt.mean(0)
+        E_neg = torch.log(torch.exp(lnPonsum).mean(0)+2e0)
         loss = E_neg - E_pos
         
         return loss
