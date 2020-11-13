@@ -1,0 +1,105 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2020
+
+% ready for submission
+% \usepackage{neurips_2020}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+    % \usepackage[preprint,nonatbib]{neurips_2020}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+    \usepackage[final]{neurips_2020}
+
+% to avoid loading the natbib package, add option nonatbib:
+    %  \usepackage[nonatbib]{neurips_2020}
+
+\usepackage{graphics}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+\usepackage{algorithm,algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{microtype}      % microtypography
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage[toc,page]{appendix}
+\usepackage{balance} % for balancing columns on the final page
+\usepackage{caption} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+
+\newcustomtheorem{customthm}{Theorem}
+\newcustomtheorem{customlemma}{Lemma}
+
+\title{Variational Generalization Bounds for Unsupervised Visual Recognition}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+\author{
+  Karush Suri$^{1}$, Mahdi Haghifam$^{1,2}$, Ashish Khisti$^{1}$\\
+   $^{1}$University of Toronto, $^{2}$Vector Institute\\
+  \texttt{karush.suri@mail.utoronto.ca}
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+cv f 
+\end{abstract}
+
+\section{Introduction}
+
+\section{Related Work}
+
+\section{Preliminaries}
+
+\section{When Do Bounds Hurt Learning?}
+
+\section{Variational Bounds for Generalization}
+
+\section{Experiments}
+
+\section{Conclusion}
+
+\bibliographystyle{unsrt} 
+\small{\bibliography{sample}}
+
+\includepdf[pages=-]{Appendix}
+
+
+\end{document}
