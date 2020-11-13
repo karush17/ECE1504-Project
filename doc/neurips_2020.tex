@@ -83,6 +83,19 @@ cv f
 \end{abstract}
 
 \section{Introduction}
+Generalization bounds provide tight measures which facilitate the learning of distributions under sparse data. The work of Russo et. al. \cite{russo} has led to drastic improvements \cite{xu,negrea} in bounding generalization error with information theoretic metrics. The surge of information theoretic metrics \cite{xu,bu} has further motivated improvements in bias reduction for control measurements \cite{cotnrol}. While generalization bounds tighten the dynamics of sparse learning, a tighter approximation often hurts the performance in the presence of out-of distribution samples \cite{mine}. In many such scenarios, it is difficult to empirically evaluate the performance of the bound \cite{control}. Additionally, the abundance of divergence metrics does not provide a selection criterion for an optimal information theoretic entity \cite{book, measures}. This allows one to rethink the feasibility of conventional bounds in practical scenarios. 
+
+Variational bounds \cite{variational} are a class of probabilistic bounds which depict increasing potential for learning \cite{mine,visual,cpc}. A typical variational bound utilizes a tractable data distribution which can be approximated with limited data samples. This property of variational measures motivates data-efficient learning \cite{cpcv2}. Tractibility of variational bounds for information maximization and minimization allows multiple objective functions to be realisable in a given problem setting \cite{variational}. Variational bounds can then be flexibly modeled as lower and upper bounding measures of information \cite{variational}. However, large-scale utilization of multi-sample variational bounds is an open problem for unsupervised learning tasks \cite{variational}. Data-efficient learning in conjunction with tractable compatibility to data distributions presents variational bounds as suitable candidates for learning objective functions.
+
+We revisit the regime of generalization bounds from the perspective of information theoretic and variational distributions. The work highlights the suitability of variational bounds in comparison to conventional generalization bounds which emphasize only on the bias in data estimates. Variational objectives tackle high bias as well as high variance estimates. Our main contributions are threefold- 
+
+\begin{itemize}
+    \item We revisit generalization in light of variational learning and identify hindrances which prevent accurate  approximations of data distributions 
+    \item We conjecture a theoretical alternative which aims to address the hindrances discovered in learning variational generalization bounds
+    \item We empirically demonstrate the suitability of variational generalization bounds on unsupervised viual recognition tasks wherein the data distribution is inherently challenging to approximate  
+  \end{itemize}
+
+
 
 \section{Related Work}
 \textbf{Variational Bounds}:
@@ -119,7 +132,7 @@ cv f
 \subsection{Setup}
 % explain the setup 
 
-\subsection{Generalization using Variational Bounds}
+\subsection{Unsupervised Instant Discrimination}
 % provide tabular results, emphasize on whay and how
 
 \section{Conclusion}
@@ -127,7 +140,7 @@ cv f
 \bibliographystyle{unsrt} 
 \small{\bibliography{sample}}
 
-\includepdf[pages=-]{Appendix}
+% \includepdf[pages=-]{Appendix}
 
 
 \end{document}

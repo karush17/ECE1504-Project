@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  13 NOV 2020 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  13 NOV 2020 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -617,153 +617,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
-
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=48, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf>
-Package pdftex.def Info: Appendix.pdf  used on input line 130.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf>
-Package pdftex.def Info: Appendix.pdf  used on input line 130.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+Package natbib Warning: Citation `cotnrol' on page 1 undefined on input line 86.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 93.
+(k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [1
 
 
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+{k:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [2])
 
+Package natbib Warning: There were undefined citations.
 
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=51, page=1, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 1>
-Package pdftex.def Info: Appendix.pdf , page1 used on input line 130.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 1>
-Package pdftex.def Info: Appendix.pdf , page1 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[1
-
-
-{k:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 1>
-Package pdftex.def Info: Appendix.pdf , page1 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 1>
-Package pdftex.def Info: Appendix.pdf , page1 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 1>
-Package pdftex.def Info: Appendix.pdf , page1 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf>]
-
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=123, page=2, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 2>
-Package pdftex.def Info: Appendix.pdf , page2 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 2>
-Package pdftex.def Info: Appendix.pdf , page2 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 2>
-Package pdftex.def Info: Appendix.pdf , page2 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[3 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf>]
-
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=133, page=3, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 3>
-Package pdftex.def Info: Appendix.pdf , page3 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 3>
-Package pdftex.def Info: Appendix.pdf , page3 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 3>
-Package pdftex.def Info: Appendix.pdf , page3 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[4 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf>]
-
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=138, page=4, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 4>
-Package pdftex.def Info: Appendix.pdf , page4 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 4>
-Package pdftex.def Info: Appendix.pdf , page4 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 4>
-Package pdftex.def Info: Appendix.pdf , page4 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[5 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf>]
-
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=148, page=5, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 5>
-Package pdftex.def Info: Appendix.pdf , page5 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 5>
-Package pdftex.def Info: Appendix.pdf , page5 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 5>
-Package pdftex.def Info: Appendix.pdf , page5 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[6 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf>]
-
-pdfTeX warning: pdflatex.exe (file c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Appendix.pdf, id=157, page=6, 614.295pt x 794.97pt>
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 6>
-Package pdftex.def Info: Appendix.pdf , page6 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 6>
-Package pdftex.def Info: Appendix.pdf , page6 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Appendix.pdf Graphic file (type pdf)
-<use Appendix.pdf, page 6>
-Package pdftex.def Info: Appendix.pdf , page6 used on input line 130.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[7 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/Appendix.pdf>] [8] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
+[3] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
 Package rerunfilecheck Info: File `neurips_2020.out' has not changed.
-(rerunfilecheck)             Checksum: E9C7EEFD89D4F8B8647D961679FE8B0E;669.
+(rerunfilecheck)             Checksum: 93EC9E5B1C6306D1E941918D2BAFD3AB;665.
  ) 
 Here is how much of TeX's memory you used:
- 12140 strings out of 479916
- 189412 string characters out of 5886642
- 533432 words of memory out of 5000000
- 28447 multiletter control sequences out of 15000+600000
- 546599 words of font info for 60 fonts, out of 8000000 for 9000
+ 12252 strings out of 479916
+ 190349 string characters out of 5886642
+ 538615 words of memory out of 5000000
+ 28486 multiletter control sequences out of 15000+600000
+ 551529 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,17n,78p,318b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
-{k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (8 pages, 17614955 bytes).
+ 72i,9n,77p,1073b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
+{k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (3 pages, 81271 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 14470 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 19033 words of extra memory for PDF output out of 20736 (max. 10000000)
 
