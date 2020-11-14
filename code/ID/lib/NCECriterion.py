@@ -131,8 +131,8 @@ class NCECriterion(nn.Module):
         lnPonsum = lnPon.view(-1, 1).sum(0)
         
         loss_temp = - (lnPmtsum + lnPonsum) / batchSize
-        E_pos = get_positive_expectation(loss_temp, measure='JSD', average=False)
-        E_neg = get_negative_expectation(loss_temp, measure='JSD', average=False)
+        E_pos = get_positive_expectation(loss_temp, measure='RKL', average=False)
+        E_neg = get_negative_expectation(loss_temp, measure='RKL', average=False)
         # E_pos = lnPmt.mean(0)
         # E_neg = torch.log(torch.exp(lnPonsum).mean(0)+2e0)
         loss = E_neg - E_pos

@@ -73,4 +73,10 @@ Olivier~J. Hénaff, Aravind Srinivas, Jeffrey~De Fauw, Ali Razavi, Carl
 \newblock Data-efficient image recognition with contrastive predictive coding,
   2020.
 
+\bibitem{infomax}
+R~Devon Hjelm, Alex Fedorov, Samuel Lavoie-Marchildon, Karan Grewal, Phil
+  Bachman, Adam Trischler, and Yoshua Bengio.
+\newblock Learning deep representations by mutual information estimation and
+  maximization, 2019.
+
 \end{thebibliography}

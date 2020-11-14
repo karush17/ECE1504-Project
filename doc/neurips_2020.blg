@@ -6,45 +6,45 @@ Database file #1: sample.bib
 Warning--I didn't find a database entry for "cotnrol"
 Warning--empty booktitle in russo
 Warning--empty booktitle in xu
-You've used 12 entries,
+You've used 13 entries,
             1791 wiz_defined-function locations,
-            511 strings with 5855 characters,
-and the built_in function-call counts, 3106 in all, are:
-= -- 253
-> -- 168
+            514 strings with 6071 characters,
+and the built_in function-call counts, 3307 in all, are:
+= -- 262
+> -- 191
 < -- 4
-+ -- 60
-- -- 48
-* -- 194
-:= -- 471
-add.period$ -- 35
-call.type$ -- 12
-change.case$ -- 12
++ -- 68
+- -- 55
+* -- 208
+:= -- 506
+add.period$ -- 37
+call.type$ -- 13
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 141
-empty$ -- 304
-format.name$ -- 48
-if$ -- 712
+cite$ -- 15
+duplicate$ -- 146
+empty$ -- 322
+format.name$ -- 55
+if$ -- 754
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 13
 missing$ -- 9
-newline$ -- 60
-num.names$ -- 12
-pop$ -- 59
+newline$ -- 64
+num.names$ -- 13
+pop$ -- 66
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 87
+skip$ -- 91
 stack$ -- 0
 substring$ -- 174
-swap$ -- 50
+swap$ -- 51
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 23
-width$ -- 14
-write$ -- 123
+while$ -- 24
+width$ -- 15
+write$ -- 131
 (There were 3 warnings)
