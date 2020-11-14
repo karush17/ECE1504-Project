@@ -700,11 +700,6 @@ INPUT k:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT k:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -714,14 +709,19 @@ INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
 INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
 INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
 INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux

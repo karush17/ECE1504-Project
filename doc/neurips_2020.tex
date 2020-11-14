@@ -79,7 +79,7 @@
 \maketitle
 
 \begin{abstract}
-cv f 
+Recent advancements in generalization bounds have led to the development of tight information theoretic and data-dependent measures. Although generalization bounds reduce bias in estimates, they often suffer from tractability during empirical evaluation. The lack of a uniform criterion for estimation of mutual information and selection of divergence measures in conventional bounds hinders utility to sparse distributions. To that end, we revisit generalization through the lens of variational bounds. We identify hindrances based on bias, variance and learning dynamics which prevent accurate approximations of data distributions. Our empirical evaluation carried out on large-scale unsupervised visual recognition tasks highlights the necessity for variational bounds as generalization objectives for learning complex data distributions. Approximated estimates demonstrate low variance and improved convergence in comparison to conventional generalization bounds. Lastly, based on observed hindrances, we propose a theoretical alternative which aims to improve learning and tightness of variational generalization bounds. The proposed approach is motivated by contraction theory and yields a lower bound on mutual information.   
 \end{abstract}
 
 \section{Introduction}
@@ -90,9 +90,9 @@ Variational bounds \cite{variational} are a class of probabilistic bounds which 
 We revisit the regime of generalization bounds from the perspective of information theoretic and variational distributions. The work highlights the suitability of variational bounds in comparison to conventional generalization bounds which emphasize only on the bias in data estimates. Variational objectives tackle high bias as well as high variance estimates. Our main contributions are threefold- 
 
 \begin{itemize}
-    \item We revisit generalization in light of variational learning and identify hindrances which prevent accurate  approximations of data distributions 
-    \item We conjecture a theoretical alternative which aims to address the hindrances discovered in learning variational generalization bounds
-    \item We empirically demonstrate the suitability of variational generalization bounds on unsupervised viual recognition tasks wherein the data distribution is inherently challenging to approximate  
+    \item We revisit generalization in light of variational learning and identify hindrances which prevent accurate  approximations of data distributions.
+    \item We empirically demonstrate the suitability of variational generalization bounds on unsupervised visual recognition tasks wherein the data distribution is inherently challenging to approximate.  Our evaluation highlights the necessity for variational generalization bounds.
+    \item We conjecture a theoretical alternative which aims to address the hindrances discovered in learning variational generalization bounds. The proposed approach is motivated by contraction theory and yields a lower bound on mutual information. 
   \end{itemize}
 
 
@@ -126,6 +126,8 @@ We revisit the regime of generalization bounds from the perspective of informati
 
 \subsection{Bias Reduction as a Contraction}
 % provide your novelty, explain its usage well
+% maybe use extreme value theory to prove the tightness of InfoNCE
+% maybe combine InfoNCE with control bound
 
 \section{Experiments}
 % state your objectives and what you wish to assess
