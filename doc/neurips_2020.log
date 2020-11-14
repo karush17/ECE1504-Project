@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  14 NOV 2020 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  14 NOV 2020 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -632,30 +632,27 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 Package natbib Warning: Citation `zu' on page 2 undefined on input line 103.
 
-(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
-Underfull \vbox (badness 5726) has occurred while \output is active []
-
- [2] [3])
+[2] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [3])
 
 Package natbib Warning: There were undefined citations.
 
 [4] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
 Package rerunfilecheck Info: File `neurips_2020.out' has not changed.
-(rerunfilecheck)             Checksum: 93EC9E5B1C6306D1E941918D2BAFD3AB;665.
+(rerunfilecheck)             Checksum: EE21F5700A38A131550D5C59FD92FC25;663.
  ) 
 Here is how much of TeX's memory you used:
- 12320 strings out of 479916
- 191076 string characters out of 5886642
- 542899 words of memory out of 5000000
- 28509 multiletter control sequences out of 15000+600000
- 553155 words of font info for 129 fonts, out of 8000000 for 9000
+ 12351 strings out of 479916
+ 191417 string characters out of 5886642
+ 544772 words of memory out of 5000000
+ 28521 multiletter control sequences out of 15000+600000
+ 553750 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,9n,77p,1637b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,9n,77p,1637b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (4 pages, 96773 bytes).
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (4 pages, 98858 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  19033 words of extra memory for PDF output out of 20736 (max. 10000000)
 

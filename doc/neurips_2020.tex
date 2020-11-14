@@ -102,7 +102,7 @@ We revisit the regime of generalization bounds from the perspective of informati
 
 \textbf{Generalization Bounds}: The pivotal work of \cite{russo} provides a lower-bound on MI based on information-theoretic measures \cite{dv,book}. The MI bound \cite{overfit} is further improved as a result of tight lower bounds on MI minimizing the generalization error \cite{xu,bu}. Additional measures such as data-dependent estimates \cite{negrea} and the specific choice of distributions \cite{kuzborskij} extend the application of lower bounds to stochastic learning dynamics \cite{bu,sgld} and differential privacy \cite{russo,zu}. The bounds are further sharpened using conditional MI \cite{haghifam} in a sample-based framework \cite{steinke} which extends the data-dependent scheme of \cite{negrea}. A more suitable application is the setting of adaptive control \cite{control} which is based on high stochasticity stemming from continuous measurements. The bound provided in \cite{control} aims to address this problem with the introduction of $alpha$ divergence metrics \cite{measures} which serve as a lower bound on MI. While the bound is proven to be theoretically tight, its application and empirical evaluation remain an open problem in literature. We aim to leverage the theoretical contributions of \cite{control} in order to provide a variational alternative which can be empirically realised.
 
-\textbf{Unsupervised Visual Recognition}:
+\textbf{Unsupervised Visual Recognition}: One of the main applications of information-theoretic bounds is unsupervised learning for visual recognition tasks \cite{visual}. The information maximization framework \cite{infomax} reduces local sparsity and motivates the learning of richer representations \cite{cpc}. Multi-sample bounds such as InfoNCE in CPC \cite{cpc} and CPCv2 \cite{cpcv2} contrast augmented representations with actual input samples in order to maximize MI among local pixels. MOCO \cite{moco,mocov2} extends the setup of InfoNCE further with the pretext contrast as a dictionary-lookup task. InfoNCE bound is combined with a momentum encoder which maximizes MI as a slow moving average of input and augmented samples. SimCLR \cite{simclr} builds on the MOCO framework by maximizing the internal agreement between representations. While unsupervised representation learning methods adopt lower bounds on MI, they do so at the cost of large batch sizes. Since the InfoNCE bound is lose at small batch sizes, large architectures lean towards pretraining alternatives \cite{simclrv2} rather than improving lower bounds. The work of \cite{visual} adapts InfoNCE bound based on parameteric and non-parameteric learning of visual instance discrimination. The multi-sample classification is casted to a binary discrimination setup, hence providing improved generalization and consistent performance. Based on this insight, we adopt the instance discrimination setup of \cite{visual} for our experiments. 
 
 \section{Preliminaries}
 % all background with notations
@@ -124,7 +124,7 @@ We revisit the regime of generalization bounds from the perspective of informati
 \subsection{Learning Variational Bounds}
 % review the bounds here, critically comment on their usage
 
-\subsection{Bias Reduction as a Contraction}
+\subsection{Bias Reduction as Contraction}
 % provide your novelty, explain its usage well
 % maybe use extreme value theory to prove the tightness of InfoNCE
 % maybe combine InfoNCE with control bound

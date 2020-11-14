@@ -115,4 +115,23 @@ Thomas Steinke and Lydia Zakynthinou.
 \newblock Proceedings of Machine Learning Research, pages 3437--3452. PMLR,
   2020.
 
+\bibitem{moco}
+Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick.
+\newblock Momentum contrast for unsupervised visual representation learning,
+  2020.
+
+\bibitem{mocov2}
+Xinlei Chen, Haoqi Fan, Ross Girshick, and Kaiming He.
+\newblock Improved baselines with momentum contrastive learning, 2020.
+
+\bibitem{simclr}
+Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton.
+\newblock A simple framework for contrastive learning of visual
+  representations, 2020.
+
+\bibitem{simclrv2}
+Ting Chen, Simon Kornblith, Kevin Swersky, Mohammad Norouzi, and Geoffrey
+  Hinton.
+\newblock Big self-supervised models are strong semi-supervised learners, 2020.
+
 \end{thebibliography}
