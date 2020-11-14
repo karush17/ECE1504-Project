@@ -79,4 +79,40 @@ R~Devon Hjelm, Alex Fedorov, Samuel Lavoie-Marchildon, Karan Grewal, Phil
 \newblock Learning deep representations by mutual information estimation and
   maximization, 2019.
 
+\bibitem{dv}
+MD~Donsker and SRS Varadhan.
+\newblock Large deviations for markov processes and the asymptotic evaluation
+  of certain markov process expectations for large times.
+\newblock In {\em Probabilistic Methods in Differential Equations}, pages
+  82--88. Springer, 1975.
+
+\bibitem{overfit}
+Daniel Russo and James Zou.
+\newblock How much does your data exploration overfit? controlling bias via
+  information usage, 2019.
+
+\bibitem{kuzborskij}
+Ilja Kuzborskij, Nicol{\`o} Cesa-Bianchi, and Csaba Szepesv{\'a}ri.
+\newblock Distribution-dependent analysis of gibbs-erm principle.
+\newblock {\em arXiv preprint arXiv:1902.01846}, 2019.
+
+\bibitem{sgld}
+Max Welling and Yee~W Teh.
+\newblock Bayesian learning via stochastic gradient langevin dynamics.
+\newblock In {\em Proceedings of the 28th international conference on machine
+  learning (ICML-11)}, pages 681--688, 2011.
+
+\bibitem{haghifam}
+Mahdi Haghifam, Jeffrey Negrea, Ashish Khisti, Daniel~M. Roy, and
+  Gintare~Karolina Dziugaite.
+\newblock Sharpened generalization bounds based on conditional mutual
+  information and an application to noisy, iterative algorithms, 2020.
+
+\bibitem{steinke}
+Thomas Steinke and Lydia Zakynthinou.
+\newblock {R}easoning {A}bout {G}eneralization via {C}onditional {M}utual
+  {I}nformation.
+\newblock Proceedings of Machine Learning Research, pages 3437--3452. PMLR,
+  2020.
+
 \end{thebibliography}

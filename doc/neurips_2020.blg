@@ -4,47 +4,49 @@ The top-level auxiliary file: neurips_2020.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 Warning--I didn't find a database entry for "cotnrol"
+Warning--I didn't find a database entry for "zu"
 Warning--empty booktitle in russo
 Warning--empty booktitle in xu
-You've used 13 entries,
+Warning--empty booktitle in steinke
+You've used 19 entries,
             1791 wiz_defined-function locations,
-            514 strings with 6071 characters,
-and the built_in function-call counts, 3307 in all, are:
-= -- 262
-> -- 191
-< -- 4
-+ -- 68
-- -- 55
-* -- 208
-:= -- 506
-add.period$ -- 37
-call.type$ -- 13
-change.case$ -- 13
+            541 strings with 7088 characters,
+and the built_in function-call counts, 4877 in all, are:
+= -- 410
+> -- 251
+< -- 7
++ -- 90
+- -- 71
+* -- 282
+:= -- 721
+add.period$ -- 55
+call.type$ -- 19
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 146
-empty$ -- 322
-format.name$ -- 55
-if$ -- 754
+cite$ -- 22
+duplicate$ -- 227
+empty$ -- 484
+format.name$ -- 71
+if$ -- 1136
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 9
-newline$ -- 64
-num.names$ -- 13
-pop$ -- 66
+int.to.str$ -- 19
+missing$ -- 13
+newline$ -- 92
+num.names$ -- 19
+pop$ -- 99
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 91
+skip$ -- 152
 stack$ -- 0
-substring$ -- 174
-swap$ -- 51
-text.length$ -- 4
+substring$ -- 270
+swap$ -- 85
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 24
-width$ -- 15
-write$ -- 131
-(There were 3 warnings)
+warning$ -- 3
+while$ -- 39
+width$ -- 21
+write$ -- 192
+(There were 5 warnings)
