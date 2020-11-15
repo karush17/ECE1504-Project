@@ -131,7 +131,7 @@ The work of \cite{variational} throws light on the behavior of tractable distrib
 
 \begin{figure*}[ht]
   \centering
-  \includegraphics[height=2.5cm,width=13cm]{dist.PNG}
+  \includegraphics[height=2.75cm,width=13cm]{dist.PNG}
   \caption{\textbf{Left} Conventional lose bounds suffer from high bias which hurts generalization of the learnt distribution, \textbf{Center} Learnt distribution is additionally hampered with noisy approximations, \textbf{Right} Biased estimates in conjunction with noisy dynamics hurt the completeness of learnt distribution.}
   \label{fig:dist}
 \end{figure*}
@@ -142,13 +142,29 @@ The work of \cite{variational} throws light on the behavior of tractable distrib
 % highlight the importance of alpha I and difficulty in selection of optimal alpha
 
 \section{Variational Bounds for Generalization}
+This section provides insights into variational bounds as generelization measures of MI. Learning of variational bounds is discussed from the multi-sample and interpolation perspective. Nonlinear interpolation bounds give rise to the trade-off between bias and variance in estimates. Following generalization through this lens, we formulate an alternate approach with bias reduction as a contraction mapping. We extend our theoretical claims to previously discussed generalization bounds and discuss their formulations.
 % explain what the section is about and what you wish to accomplish, make sure to be mathematical
 
 \subsection{Learning Variational Bounds}
 % review the bounds here, critically comment on their usage
-\textbf{InfoNCE}:
+\textbf{InfoNCE}: The InfoNCE objective is based on multi-sample unnormalized bounds. These bounds formulate multi-sample MI $I(X_{1};Y)$ which is bounded by the optimal choice of critic $f(x,y)$. One such formulation is based on MINE \cite{mine} as presented in \autoref{eq:mine}.
+\begin{gather}
+  I(X_{1},Y) \geq 1 + \mathbb{E}_{p(x_{1:K})p(y|x_{1})}[\log\frac{e^{f(x_{1},y)}}{m(y;x_{1:K})}] - \mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{1},y)}}{m(y;x_{1:K})}] \label{eq:mine}
+\end{gather} 
+Here $m(y;x_{1:K})$ is a Monte-Carlo estimate of the partition function $Z(y)$ and is mathematically expressed in \autoref{eq:monte}.
+\begin{gather}
+  m(y;x_{1:K}) = \frac{1}{K}\sum_{k=1}^{K}e^{f(x_{k},y)} \label{eq:monte}
+\end{gather}
+One can recover the InfoNCE bound ($I_{NCE}$) upon averaging over all $K$ replicates in the last term of \autoref{eq:mine} which yields 1. $I_{NCE}$ can then be expressed as a lower bound on MI in \autoref{eq:nce}.
+\begin{gather}
+  I(X;y) \geq \mathbb{E}[\frac{1}{K}\sum_{k=1}^{K}\log\frac{e^{f(x_{i},y_{i})}}{\frac{1}{K}\sum_{j=1}^{K}e^{f(x_{k},y_{j})}}] \triangleq I_{NCE} \label{eq:nce}
+\end{gather} 
 
-\textbf{Nonlinear Interpolation}:
+\textbf{Nonlinear Interpolation}: The multi-sample framework of MINE can be further extended using a simpler formulation. A nonlinear interpolation between MINE and $I_{NCE}$ bridges the gap between low-bias and high-variance estimates of MINE with high-bias and low-variance estimates of $I_{NCE}$. The nonlinear interpolation bound ($I_{IN}$) is expressed in \autoref{eq:non}.
+\begin{multline}  
+  I_{IN} \triangleq 1 + \mathbb{E}_{p(x_{1:K})p(y|x_{1})}[\log\frac{e^{f(x_{1},y)}}{\alpha m(y;x_{1:K})+(1-\alpha)q(y)}]\\ - \mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{1},y)}}{\alpha m(y;x_{1:K})+(1-\alpha)q(y)}] \label{eq:non}
+\end{multline}  
+While $I_{NCE}$ is upper bounded by $\log K$, $I_{IN}$ is upper bounded by $\log \frac{K}{\alpha}$. The control in bias-variance trade-off improves accuracy of estimates. However, the significance of $\alpha$ remains an open question in the case of higher-order divergence metrics and large value of MI in practical settings. 
 
 \textbf{$\phi$-divergence}:
 
