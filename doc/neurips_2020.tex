@@ -136,7 +136,7 @@ The work of \cite{variational} throws light on the behavior of tractable distrib
   \label{fig:dist}
 \end{figure*}
 
-\textbf{A Failure to Learn}:  Multi-sample bounds proposed in conjunction with $\alpha$-MI saturates at $\log K$ with $K$ being the number of samples in the batch. 
+\textbf{A Failure to Learn}: Biased and noisy estimates are the key hindrances in learning tractable distributions. To that end, \cite{variational} aptly proposes a continuum of multi-sample interpolation bounds which trade-off bias with variance. A simpler form of critic when applied to non-linear interpolation in InfoNCE samples yields a continuum of lower bounds on MI. The new bound can be manually tuned using $\alpha$ which trades off bias with variance. Nonlinear interpolation bounds proposed in conjunction with $\alpha$-MI saturate at $\log \frac{K}{\alpha}$ with $K$ being the number of samples in the batch. Saturation of interpolation hurts the completeness of distribution and the bound fails to learn large MI estimates with inceasing batch sizes.  
 
 % demonstrate DV empirically and highlight its consequences
 % highlight the importance of alpha I and difficulty in selection of optimal alpha
