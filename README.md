@@ -1,20 +1,19 @@
 # ECE1504 Projct
 
-## Potential Papers
-- [ ] [Modeling Interaction via the Principle of Maximum Causal Entropy](http://www.cs.cmu.edu/~bziebart/publications/maximum-causal-entropy.pdf)
-- [ ] [On Variational Bounds of Mutual Information](https://arxiv.org/pdf/1905.06922.pdf)
-- [ ] [Dependence Measures Bounding the Exploration Bias for General Measurements](https://arxiv.org/pdf/1612.05845.pdf)
+## Papers
+- [x] [On Variational Bounds of Mutual Information](https://arxiv.org/pdf/1905.06922.pdf)
+- [x] [Dependence Measures Bounding the Exploration Bias for General Measurements](https://arxiv.org/pdf/1612.05845.pdf)
 
 ## Introduction
-- [ ] Walk over the high-level ideas in the paper and inform the reader about what they emphasize on
-- [ ] Highlight the key findings and aspects of the work
-- [ ] Discuss the pros/cons at a very high-level
+- [x] Walk over the high-level ideas in the paper and inform the reader about what they emphasize on
+- [x] Highlight the key findings and aspects of the work
+- [x] Discuss the pros/cons at a very high-level
 
 ## Related Work
-- [ ] Throw light on the review carried out by the paper
-- [ ] Emphasize on the pros/cons of previous works and how the paper has improved upon it
-- [ ] Point out some of the open areas which the work discusses/touches upon
-- [ ] Towards the end, discuss what could be improved from a literature point of view (more specifically highlight what has been done following the paper)
+- [x] Throw light on the review carried out by the paper
+- [x] Emphasize on the pros/cons of previous works and how the paper has improved upon it
+- [x] Point out some of the open areas which the work discusses/touches upon
+- [x] Towards the end, discuss what could be improved from a literature point of view (more specifically highlight what has been done following the paper)
 
 ## Method-1
 - [ ] Discuss in detail the first method, its specifications, general discussions, comments, strengths, weaknesses, etc.
@@ -25,7 +24,7 @@
 ## Method-2
 Exactly same as Method-1
 
-## Application Areas
+## Experiments
 - [ ] Have a broad discussion about the applictions, experiments, important findidngs of the work.
 - [ ] Involve the reader into the goods and bads of the setup, its specifications, why is it essential from an application perspective.
 - [ ] Lay out some possible areas of expansion or scenarios where the approach would work/perform better
