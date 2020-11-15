@@ -123,17 +123,21 @@ Generalization bounds make use of random variables with a cumulant-generation \c
 
 \section{When Do Bounds Hurt Learning?}
 % explain the problems here, demonstrate using table with tick marks and crosses, provide a visual (of distribution) as well, cite examples and mathematical flaws
-\begin{figure*}[ht]
-  \centering
-  \includegraphics[height=2.5cm,width=13cm]{dist.PNG}
-  \caption{\textbf{Left} Conventional lose bounds suffer from high bias which hurts generalization of the learnt distribution, \textbf{Center} Learnt distribution is additionally hampered with noisy approximations, \textbf{Right} Biased estimates in conjunction with noisy dynamics hurt the completeness of learnt data distributions.}
-\end{figure*}
+The work of \cite{variational} throws light on the behavior of tractable distributions with high dimensional random variables. Based on the empirical characteristics of these bounds, one can identify the hindrances faced in generalization of the leanring algorithm (see \autoref{fig:dist}).
 
-\textbf{High Variance}:
+% \begin{figure*}[ht]
+%   \centering
+%   \includegraphics[height=2.5cm,width=13cm]{dist.PNG}
+%   \caption{\textbf{Left} Conventional lose bounds suffer from high bias which hurts generalization of the learnt distribution, \textbf{Center} Learnt distribution is additionally hampered with noisy approximations, \textbf{Right} Biased estimates in conjunction with noisy dynamics hurt the completeness of learnt data distributions.}
+%   \label{fig:dist}
+% \end{figure*}
+
+\textbf{High Variance}: Normalized upper and lower bounds aid in tractability of variational distributions when the data to be learned is long-tailed. However, these bounds demonstrate high variance as a result of large MI estimates. A suitable alternative to normalized bounds is to adopt the framework of structured bounds. These bounds leverage the structure of the problem and yield a known conditional distribution $p(y|x)$ which is tractable as per the problem setting. Structured bounds are conveniently applicable to representation learning \cite{cpc,variational} but do not necessarily scale to high-dimensional scenarios. Another alternative which provisions a conitional tractable distribution are reparameterization bounds. These bounds make use of an additional functional, known as the \textit{critic}, which converts lower bounds on MI into upper bounds on KL divergence. The critic functional need not explicitly learn the mapping between $x$ and $y$. However, reparameterization is only made feasible if the conditional distribution $p(y|x)$ is tractable. 
 
 \textbf{High Bias}: 
 
-\textbf{A Failure to Learn}: 
+\textbf{A Failure to Learn}:  Multi-sample bounds proposed in conjunction with $\alpha$-MI saturates at $\log K$ with $K$ being the number of samples in the batch. 
+
 % demonstrate DV empirically and highlight its consequences
 % highlight the importance of alpha I and difficulty in selection of optimal alpha
 

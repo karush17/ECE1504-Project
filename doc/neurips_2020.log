@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  14 NOV 2020 20:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  15 NOV 2020 10:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,35 +633,37 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Package natbib Warning: Citation `zu' on page 2 undefined on input line 103.
 
 [2]
-<dist.PNG, id=150, 384.43625pt x 83.31125pt>
-File: dist.PNG Graphic file (type png)
-<use dist.PNG>
-Package pdftex.def Info: dist.PNG  used on input line 128.
-(pdftex.def)             Requested size: 369.91104pt x 71.1365pt.
- (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
+
+LaTeX Warning: Reference `fig:dist' on page 3 undefined on input line 126.
+
+(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG>] [4])
+ [3] [4])
 
 Package natbib Warning: There were undefined citations.
 
 [5] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
 Package rerunfilecheck Info: File `neurips_2020.out' has not changed.
 (rerunfilecheck)             Checksum: EE21F5700A38A131550D5C59FD92FC25;663.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 12381 strings out of 479916
- 191758 string characters out of 5886642
+ 12379 strings out of 479916
+ 191719 string characters out of 5886642
  545101 words of memory out of 5000000
- 28539 multiletter control sequences out of 15000+600000
- 553869 words of font info for 141 fonts, out of 8000000 for 9000
+ 28533 multiletter control sequences out of 15000+600000
+ 555952 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,9n,77p,1637b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 {k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (5 pages, 162365 bytes).
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (5 pages, 153414 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 19038 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 23129 words of extra memory for PDF output out of 24883 (max. 10000000)
 
