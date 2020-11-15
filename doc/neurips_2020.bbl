@@ -134,4 +134,15 @@ Ting Chen, Simon Kornblith, Kevin Swersky, Mohammad Norouzi, and Geoffrey
   Hinton.
 \newblock Big self-supervised models are strong semi-supervised learners, 2020.
 
+\bibitem{kl}
+Solomon Kullback and Richard~A Leibler.
+\newblock On information and sufficiency.
+\newblock {\em The annals of mathematical statistics}, 22(1):79--86, 1951.
+
+\bibitem{cover}
+Thomas~M. Cover and Joy~A. Thomas.
+\newblock {\em Elements of Information Theory (Wiley Series in
+  Telecommunications and Signal Processing)}.
+\newblock Wiley-Interscience, USA, 2006.
+
 \end{thebibliography}

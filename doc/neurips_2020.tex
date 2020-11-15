@@ -105,15 +105,29 @@ We revisit the regime of generalization bounds from the perspective of informati
 \textbf{Unsupervised Visual Recognition}: One of the main applications of information-theoretic bounds is unsupervised learning for visual recognition tasks \cite{visual}. The information maximization framework \cite{infomax} reduces local sparsity and motivates the learning of richer representations \cite{cpc}. Multi-sample bounds such as InfoNCE in CPC \cite{cpc} and CPCv2 \cite{cpcv2} contrast augmented representations with actual input samples in order to maximize MI among local pixels. MOCO \cite{moco,mocov2} extends the setup of InfoNCE further with the pretext contrast as a dictionary-lookup task. InfoNCE bound is combined with a momentum encoder which maximizes MI as a slow moving average of input and augmented samples. SimCLR \cite{simclr} builds on the MOCO framework by maximizing the internal agreement between representations. While unsupervised representation learning methods adopt lower bounds on MI, they do so at the cost of large batch sizes. Since the InfoNCE bound is lose at small batch sizes, large architectures lean towards pretraining alternatives \cite{simclrv2} rather than improving lower bounds. The work of \cite{visual} adapts InfoNCE bound based on parameteric and non-parameteric learning of visual instance discrimination. The multi-sample classification is casted to a binary discrimination setup, hence providing improved generalization and consistent performance. Based on this insight, we adopt the instance discrimination setup of \cite{visual} for our experiments. 
 
 \section{Preliminaries}
+We review the information-theoretic setup for generalization and variational bounds. Let $X$ and $Y$ be a pair of random variables denoting the input and output data distributions $p(x)$ and $p(y)$ respectively. The mutual information $I(X;Y)$ between $X$ and $Y$ is a reparameterization-invariant measure of dependency consisting of the joint distribution $p(x,y)$and can be mathematically expressed as follows,
+\begin{gather}
+  I(X;Y) = \mathbb{E}_{p(x,y)}[\log\frac{p(x|y)}{p(x)}] = \mathbb{E}_{p(x,y)}[\log\frac{p(y|x)}{p(y)}] \label{eq:inf}
+\end{gather}
+\autoref{eq:inf} can be further simplified by exapnding the expectation, 
+\begin{gather}
+  I(X;Y) = \sum_{y}p(x|y)p(y)\log\frac{p(x|y)}{p(x)} = \mathbb{E}_{p(y)}[D_{KL}(p(x|y)||p(x))] \label{eq:infsimp}
+\end{gather}
+$D_{KL}$ in \autoref{eq:infsimp} denotes the Kullback-Liebler (KL) Divergence \cite{kl} which is a divergence metric. $D_{KL}$ belongs to the general class of $\phi-$divergence metrics $D_{\phi}(P(x)||Q(y))$ which quantify the similarity between any two data distributions $P(x)$ and $Q(y)$. The general form of a $\phi$-divergence, with $\phi$ being a convex and lower semi-continuous function such that $\phi(1)=0$, is expressed in \autoref{eq:phi}. Utilizing $\phi(t)=t\log t$ in \autoref{eq:phi} yields $D_{\phi}(P(x)||Q(y))=D_{KL}(P(x)||Q(y))$.
+\begin{gather}
+  D_{\phi}(P(x)||Q(y)) = \sum_{y}Q(y)\phi(\frac{P(x)}{Q(y)}) \label{eq:phi}
+\end{gather}   
+Generalization bounds make use of random variables with a cumulant-generation \cite{cover} function $\psi(\lambda) = \log\mathbb{E}[e^{\lambda x}]$ such that $\lambda \geq 0$. A random variable is called $\sigma$-sub-Gaussian if the argument of the $\log$ cumulant-generation function satisfies $\mathbb{E}[e^{\lambda x}] \leq e^{\frac{\lambda^{2}}\sigma^{2}}{2}$ for all $\lambda \in \mathbb{R}$ with $\sigma^{2}$ as the variance proxy or variance factor of the distribution.  
 % all background with notations
+
 
 \section{When Do Bounds Hurt Learning?}
 % explain the problems here, demonstrate using table with tick marks and crosses, provide a visual (of distribution) as well, cite examples and mathematical flaws
-\begin{figure}
+\begin{figure*}[ht]
   \centering
-  \includegraphics[height=3cm,width=12cm]{dist.PNG}
-  \caption{\textbf{Left:}Conventional lose bounds suffer from high bias which hurts generalization of the learning distribution, \textbf{Center:}Learning distribution is additionally hampered with noisy approximations, \textbf{Right:}Biased estimates in conjunction with noisy dynamics hurt the completeness of approximated data distributions.}
-\end{figure}
+  \includegraphics[height=2.5cm,width=13cm]{dist.PNG}
+  \caption{\textbf{Left} Conventional lose bounds suffer from high bias which hurts generalization of the learnt distribution, \textbf{Center} Learnt distribution is additionally hampered with noisy approximations, \textbf{Right} Biased estimates in conjunction with noisy dynamics hurt the completeness of learnt data distributions.}
+\end{figure*}
 
 \textbf{High Variance}:
 
