@@ -166,7 +166,18 @@ One can recover the InfoNCE bound ($I_{NCE}$) upon averaging over all $K$ replic
 \end{multline}  
 While $I_{NCE}$ is upper bounded by $\log K$, $I_{IN}$ is upper bounded by $\log \frac{K}{\gamma}$. The control in bias-variance trade-off improves accuracy of estimates. However, the significance of $\gamma$ remains an open question in the case of higher-order divergence metrics and large value of MI in practical settings. 
 
-\textbf{$\phi$-divergence}:
+\textbf{$\phi$-divergence}: Generalized divergence metrics facilitate tighter bounds by utilizing $\alpha$-MI as the dependence measure. \cite{control} presents a tight bound which is based on random variables with cumulant-generation functions. If $X_{i}-Y_{i}$ has a cumulant generation function $\leq \psi_{i}(\lambda)$ over domain $[0,b_{i})$ where $0 \leq b_{i} \leq \infty$ and $\psi_{i}(\lambda)$ is convex and $i$ denotes the iterates of the variables $X$ and $Y$, one can define the expected cumulant-generation function $\bar{\psi_{i}}(\lambda)$ as in \autoref{eq:expcum} to obtain the bound expressed in \autoref{eq:bound}. Here, $\bar{\psi}^{*-1}$ denotes the inverse of the convex conjugate of $\bar{\psi}$. 
+\begin{gather}
+  \bar{\psi}(\lambda) = \mathbb{E}_{i}[\psi_{i}(\lambda)],\; \lambda \in [0,\underset{i}{min}b_{i}) \label{eq:expcum}
+\end{gather}
+\begin{gather}
+  \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I(X;Y)) \label{eq:bound}
+\end{gather} 
+The bound of \cite{control} generalizes the work of \cite{russo} as it is applicable to long-tailed distributions and variables which may not necessarily obey the sub-Gaussianity assumption. Based on \autoref{eq:bound}, \cite{control} formulates the $\alpha$-MI bound which improves the bound presented in \cite{russo}. Suppose $||X_{i} - Y_{i}||_{\beta} \leq \sigma_{i}$ where $1 \leq \beta \infty$, if $\alpha \triangleq$ conjugate of $\beta$ such that $\frac{1}{\alpha} + \frac{1}{\beta} = 1$, then the improved $\alpha$-MIbound can be expressed as in \autoref{eq:impbound}. 
+\begin{gather}
+  |\mathbb{E}[X_{i} - Y_{i}]| \leq ||\sigma||_{\beta}I_{\alpha}(X;Y)^{\alpha} \label{eq:impbound}
+\end{gather}
+While the bound in \autoref{eq:impbound} is generalizable to variables with no moment-generating functions, its tightness remains an open question. \cite{control} prove the tightness of \autoref{eq:impbound} using extreme value theory. The bound is tight for $n^{\frac{1}{\beta}}$ with $n$ being the number of data samples. However, tightness holds under the condition that $\beta$ is bounded such that $2 \leq \beta \leq \infty$. For large values of $\beta$, $n^{\frac{1}{\beta}}$ tends to diminish which renders the estimation of $I_{\alpha}(X;Y)$ intractable. Moreover, $\phi$-divergences are originally defined as power functions over $\beta$ while the bound makes use of an affine transformation. The alternate formulation may not hold in the more generalized-case. This poses a hindrance for $\alpha$-MI bounds to be used as substitutes to pre-existing methods. 
 
 \subsection{Bias Reduction as Contraction}
 % provide your novelty, explain its usage well
