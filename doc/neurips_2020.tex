@@ -54,7 +54,7 @@
   {\endinnercustomgeneric}
 }
 
-\newcustomtheorem{customthm}{Theorem}
+\newcustomtheorem{customthm}{Proposition}
 \newcustomtheorem{customlemma}{Lemma}
 
 \title{On Variational Generalization Bounds for Unsupervised Visual Recognition}
@@ -157,7 +157,7 @@ Here $m(y;x_{1:K})$ is a Monte-Carlo estimate of the partition function $Z(y)$ a
 \end{gather}
 One can recover the InfoNCE bound ($I_{NCE}$) upon averaging over all $K$ replicates in the last term of \autoref{eq:mine} which yields 1. $I_{NCE}$ can then be expressed as a lower bound on MI in \autoref{eq:nce}.
 \begin{gather}
-  I(X;y) \geq \mathbb{E}[\frac{1}{K}\sum_{k=1}^{K}\log\frac{e^{f(x_{i},y_{i})}}{\frac{1}{K}\sum_{j=1}^{K}e^{f(x_{k},y_{j})}}] \triangleq I_{NCE} \label{eq:nce}
+  I(X;Y) \geq \mathbb{E}[\frac{1}{K}\sum_{k=1}^{K}\log\frac{e^{f(x_{k},y_{k})}}{\frac{1}{K}\sum_{j=1}^{K}e^{f(x_{k},y_{j})}}] \triangleq I_{NCE} \label{eq:nce}
 \end{gather} 
 
 \textbf{Nonlinear Interpolation}: The multi-sample framework of MINE can be further extended using a simpler formulation. A nonlinear interpolation between MINE and $I_{NCE}$ bridges the gap between low-bias and high-variance estimates of MINE with high-bias and low-variance estimates of $I_{NCE}$. The nonlinear interpolation bound ($I_{IN}$) is expressed in \autoref{eq:non}.
@@ -168,21 +168,28 @@ While $I_{NCE}$ is upper bounded by $\log K$, $I_{IN}$ is upper bounded by $\log
 
 \textbf{$\phi$-divergence}: Generalized divergence metrics facilitate tighter bounds by utilizing $\alpha$-MI as the dependence measure. \cite{control} presents a tight bound which is based on random variables with cumulant-generation functions. If $X_{i}-Y_{i}$ has a cumulant generation function $\leq \psi_{i}(\lambda)$ over domain $[0,b_{i})$ where $0 \leq b_{i} \leq \infty$ and $\psi_{i}(\lambda)$ is convex and $i$ denotes the iterates of the variables $X$ and $Y$, one can define the expected cumulant-generation function $\bar{\psi_{i}}(\lambda)$ as in \autoref{eq:expcum} to obtain the bound expressed in \autoref{eq:bound}. Here, $\bar{\psi}^{*-1}$ denotes the inverse of the convex conjugate of $\bar{\psi}$. 
 \begin{gather}
-  \bar{\psi}(\lambda) = \mathbb{E}_{i}[\psi_{i}(\lambda)],\; \lambda \in [0,\underset{i}{min}b_{i}) \label{eq:expcum}
+  \bar{\psi}(\lambda) = \mathbb{E}_{i}[\psi_{i}(\lambda)],\; \lambda \in [0,\underset{i}{\min} b_{i}) \label{eq:expcum}
 \end{gather}
 \begin{gather}
   \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I(X;Y)) \label{eq:bound}
 \end{gather} 
-The bound of \cite{control} generalizes the work of \cite{russo} as it is applicable to long-tailed distributions and variables which may not necessarily obey the sub-Gaussianity assumption. Based on \autoref{eq:bound}, \cite{control} formulates the $\alpha$-MI bound which improves the bound presented in \cite{russo}. Suppose $||X_{i} - Y_{i}||_{\beta} \leq \sigma_{i}$ where $1 \leq \beta \infty$, if $\alpha \triangleq$ conjugate of $\beta$ such that $\frac{1}{\alpha} + \frac{1}{\beta} = 1$, then the improved $\alpha$-MIbound can be expressed as in \autoref{eq:impbound}. 
+The bound of \cite{control} generalizes the work of \cite{russo} as it is applicable to long-tailed distributions and variables which may not necessarily obey the sub-Gaussianity assumption. Based on \autoref{eq:bound}, \cite{control} formulates the $\alpha$-MI bound which improves the bound presented in \cite{russo}. Suppose $||X_{i} - Y_{i}||_{\beta} \leq \sigma_{i}$ where $1 \leq \beta \leq \infty$, if $\alpha \triangleq$ conjugate of $\beta$ such that $\frac{1}{\alpha} + \frac{1}{\beta} = 1$, then the improved $\alpha$-MI bound can be expressed as in \autoref{eq:impbound}. 
 \begin{gather}
   |\mathbb{E}[X_{i} - Y_{i}]| \leq ||\sigma||_{\beta}I_{\alpha}(X;Y)^{\alpha} \label{eq:impbound}
 \end{gather}
 While the bound in \autoref{eq:impbound} is generalizable to variables with no moment-generating functions, its tightness remains an open question. \cite{control} prove the tightness of \autoref{eq:impbound} using extreme value theory. The bound is tight for $n^{\frac{1}{\beta}}$ with $n$ being the number of data samples. However, tightness holds under the condition that $\beta$ is bounded such that $2 \leq \beta \leq \infty$. For large values of $\beta$, $n^{\frac{1}{\beta}}$ tends to diminish which renders the estimation of $I_{\alpha}(X;Y)$ intractable. Moreover, $\phi$-divergences are originally defined as power functions over $\beta$ while the bound makes use of an affine transformation. The alternate formulation may not hold in the more generalized-case. This poses a hindrance for $\alpha$-MI bounds to be used as substitutes to pre-existing methods. 
 
-\subsection{Bias Reduction as Contraction}
+\subsection{Improving Bounds on MI}
 % provide your novelty, explain its usage well
 % maybe use extreme value theory to prove the tightness of InfoNCE
 % maybe combine InfoNCE with control bound
+The bound expressed in \autoref{eq:bound} can be improved by using the multi-sample InfoNCE bound. This arises as a direct consequence of the fact that $I(X;Y) \geq I_{NCE}$. We formalize this finding in Theorem \autoref{one} and defer all proofs to Appendix. 
+\begin{customthm}{1}\label{one}
+  If $X_{i}-Y_{i}$ has the expected cumulant-generation function $\bar{\psi_{i}}(\lambda)$ and the inverse of the convex conjugate of $\bar{\psi}$ denoted by $\bar{\psi}^{*-1}$ exists, then the improved bound utilizing $I_{NCE}$ can be expressed as follows,
+\begin{gather}
+  \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I_{NCE}) \label{eq:newbound}
+\end{gather} 
+\end{customthm}
 
 \section{Experiments}
 % state your objectives and what you wish to assess
