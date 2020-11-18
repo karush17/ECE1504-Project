@@ -238,9 +238,85 @@ Proposition \autoref{prop3} and Proposition \autoref{prop4} obtained as a result
 \newpage
 \appendix
 \section{Proofs}
+\begin{customthm}{1}
+  If $X_{i}-Y_{i}$ has the expected cumulant-generation function $\bar{\psi_{i}}(\lambda)$ and the inverse of the convex conjugate of $\bar{\psi}$ denoted by $\bar{\psi}^{*-1}$ exists, then the improved bound utilizing $I_{NCE}$ can be expressed as follows,
+\begin{gather}
+  \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I_{NCE}) \nonumber
+\end{gather} 
+\end{customthm}
+\begin{proof}
+  The proof is straightforward and based on original generalization bound in \autoref{control}. The result is obtained by following the steps of Theorem 2 \cite{control} and replacing $I(X_{i};Y_{i})$ with $I_{NCE}$ in the last step as follows,
+  \begin{gather}
+    \mathbb{E}[X_{i} - Y_{i}] \leq \underset{\lambda \in [0,\min_{i}b_{i})}{\inf} \frac{\bar{\psi}(\lambda)+I(X_{i};Y_{i})}{\lambda} \nonumber \\
+    \mathbb{E}[X_{i} - Y_{i}] \leq \underset{\lambda \in [0,\min_{i}b_{i})}{\inf} \frac{\bar{\psi}(\lambda)+I_{NCE}}{\lambda}; \;\text\;{since} I_{NCE} \leq I(X_{i};Y_{i}) \nonumber\\
+    = \bar{\psi}^{*-1}(I_{NCE}) \nonumber
+  \end{gather}
+  This completes the proof.
+\end{proof}
+
+\begin{customthm}{2}
+  Given a function $f(w):w\rightarrow \mathbb{R}$, the operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ forms a contraction on $f(w)$. 
+\end{customthm}
+\begin{proof}
+  Let us first define a norm on the functions $||f_{1}(w) - f_{2}(w)|| \equiv \underset{w}{max}|f_{1}(w) - f_{2}(w)|$. Suppose $\epsilon = ||f_{1}(w) - f_{2}(w)||$,
+  \begin{gather}
+      \log \sum_{w}\exp{(f_{1}(w))} \leq \log \sum_{w}\exp{(f_{2}(w) + \epsilon)} \nonumber \\
+      = \log \sum_{w}\exp{(f_{1}(w))} \leq \log \exp{(\epsilon)} \sum_{w}\exp{(f_{2}(w))} \nonumber \\
+      = \log \sum_{w=1}\exp{(f_{1}(w))} \leq \epsilon + \log \sum_{w} \exp{(f_{2}(w))} \nonumber \\
+      = \log \sum_{w} \exp{(f_{1}(w))} - \log \sum_{w} \exp{(f_{2}(w))} \leq ||f_{1}(w) - f_{2}(w)|| \label{eq:case1}
+  \end{gather}
+  Similarly, using $\epsilon$ with $\log \sum_{w} \exp{(f_{1}(w))}$,
+  \begin{gather}
+      \log \sum_{w}\exp{(f_{1}(w) + \epsilon)} \geq \log \sum_{w}\exp{(f_{2}(w))} \nonumber \\
+      = \log \exp{(\epsilon)}\sum_{w}\exp{(f_{1}(w))} \geq \log \sum_{w}\exp{(f_{2}(w))} \nonumber \\
+      = \epsilon + \log \sum_{w} \exp{(f_{1}(w))} \geq \log \sum_{w}\exp{(f_{2}(w))} \nonumber \\
+      = ||f_{1}(w) - f_{2}(w)|| \geq \log \sum_{w} \exp{(f_{2}(w))} - \log \sum_{w} \exp{(f_{1}(w))} \label{eq:case2}
+  \end{gather}
+  Results in \autoref{eq:case1} and \autoref{eq:case2} prove that $\mathcal{T}$ is a contraction. 
+\end{proof}
+
+\begin{customthm}{3}
+  If the operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ is a contraction mapping $\forall w$, then the nonlinear interpolation bound $I_{IN}$ can be further simplified as expressed in \autoref{eq:novelbound}. 
+\begin{multline}  
+  I_{IN} \geq I_{N} \triangleq 1 + \log \sum_{i=1}^{K} \exp{\mathbb{E}_{p(x_{1:K})p(y|x_{i})}[\log\frac{e^{f(x_{i},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]}\\ \log \sum_{i=1}^{K} \exp{\mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{i},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]} \nonumber
+\end{multline} 
+\end{customthm}
+\begin{proof}
+  From \autoref{eq:non}, we have the following,
+  \begin{multline}  
+    I_{IN} \triangleq 1 + \mathbb{E}_{p(x_{1:K})p(y|x_{1})}[\log\frac{e^{f(x_{1},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]\\ - \mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{1},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}] \nonumber
+  \end{multline}  
+For notational convenience, we relabel the two interpolation terms as follows,
+\begin{gather*}
+  \mathcal{P}(x) = \mathbb{E}_{p(x_{1:K})p(y|x_{1})}[\log\frac{e^{f(x_{1},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]\\ \mathcal{Q}(x) = \mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{1},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]
+\end{gather*}
+Using the result from Proposition \autoref{two} and applying $\mathcal{T}$ to the two interpolation terms in the expressions gives us the following,
+\begin{gather*}
+  \mathcal{T}\mathcal{P}(x) - \mathcal{T}\mathcal{Q}(x) \leq \underset{x}{max}|\mathcal{P}(x) - \mathcal{Q}(x)| \\
+  \mathcal{T}\mathcal{P}(x) - \mathcal{T}\mathcal{Q}(x) \leq \mathcal{P}(x) - \mathcal{Q}(x)
+\end{gather*}  
+Using the above result in $I_{IN}$ yields the lower bound $I_{N}$ and completes the proof.
+\end{proof}  
+
+\begin{customthm}{4}
+  Since $I_{NCE} \geq I_{N}$ with high probability, the generalization bound in Proposition \autoref{one} can be simplified as follows,
+  \begin{gather}
+    \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I_{N}) \leq \bar{\psi}^{*-1}(I_{NCE}) \nonumber
+  \end{gather} 
+\end{customthm}
+\begin{proof}
+  We follow the steps of Proposition \autoref{one} to obtain the lower bound with $I_{NCE}$ and replace it with $I_{N}$ as follows,
+  \begin{gather}
+    \mathbb{E}[X_{i} - Y_{i}] \leq \underset{\lambda \in [0,\min_{i}b_{i})}{\inf} \frac{\bar{\psi}(\lambda)+I(X_{i};Y_{i})}{\lambda} \nonumber \\
+    \mathbb{E}[X_{i} - Y_{i}] \leq \underset{\lambda \in [0,\min_{i}b_{i})}{\inf} \frac{\bar{\psi}(\lambda)+I_{NCE}}{\lambda}; \;\text\;{since} I_{NCE} \leq I(X_{i};Y_{i}) \nonumber\\
+    \mathbb{E}[X_{i} - Y_{i}] \leq \underset{\lambda \in [0,\min_{i}b_{i})}{\inf} \frac{\bar{\psi}(\lambda)+I_{N}}{\lambda}; \;\text\;{since} I_{N} \leq I_{NCE} \nonumber\\
+    = \bar{\psi}^{*-1}(I_{N}) \nonumber
+  \end{gather}
+  This completes the proof.
+
+\end{proof}
 
 \section{Additional Results}
-
 
 \section{Implementation Details}
 
