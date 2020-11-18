@@ -9,3 +9,8 @@
 \BOOKMARK [2][-]{subsection.6.1}{Setup}{section.6}% 9
 \BOOKMARK [2][-]{subsection.6.2}{Unsupervised Instant Discrimination}{section.6}% 10
 \BOOKMARK [1][-]{section.7}{Conclusion}{}% 11
+\BOOKMARK [1][-]{appendix.A}{Proofs}{}% 12
+\BOOKMARK [1][-]{appendix.B}{Additional Results}{}% 13
+\BOOKMARK [1][-]{appendix.C}{Implementation Details}{}% 14
+\BOOKMARK [2][-]{subsection.C.1}{Note on Experiment Setup}{appendix.C}% 15
+\BOOKMARK [2][-]{subsection.C.2}{Hyperparameters}{appendix.C}% 16

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  18 NOV 2020 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  18 NOV 2020 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,11 +453,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count308
 \l__pdf_internal_box=\box100
-) (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux
-
-LaTeX Warning: Label `novelbound' multiply defined.
-
-)
+) (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
 \openout1 = `neurips_2020.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -637,7 +633,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Package natbib Warning: Citation `zu' on page 2 undefined on input line 103.
 
 [2]
-<dist.PNG, id=156, 384.43625pt x 83.31125pt>
+<dist.PNG, id=176, 384.43625pt x 83.31125pt>
 File: dist.PNG Graphic file (type png)
 <use dist.PNG>
 Package pdftex.def Info: dist.PNG  used on input line 134.
@@ -659,31 +655,48 @@ Package hyperref Warning: No autoref name for `innercustomgeneric' on input line
 
 Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 205.
 
-(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [6] [7])
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 205.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 217.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 217.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 219.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 224.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 224.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 224.
+
+(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [6] [7]) [8]
 
 Package natbib Warning: There were undefined citations.
 
-[8] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
+[9] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
 Package rerunfilecheck Info: File `neurips_2020.out' has not changed.
-(rerunfilecheck)             Checksum: D48659BC78A46C46F2433B6FAF5F2693;656.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 4966536B0E623B10E566203C2A80A6CA;954.
  ) 
 Here is how much of TeX's memory you used:
- 12491 strings out of 479916
- 192943 string characters out of 5886642
- 551177 words of memory out of 5000000
- 28571 multiletter control sequences out of 15000+600000
- 558218 words of font info for 179 fonts, out of 8000000 for 9000
+ 12515 strings out of 479916
+ 193206 string characters out of 5886642
+ 551210 words of memory out of 5000000
+ 28578 multiletter control sequences out of 15000+600000
+ 558657 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1637b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,77p,1662b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
 {k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (8 pages, 209149 bytes).
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (9 pages, 211686 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 23134 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 23174 words of extra memory for PDF output out of 24883 (max. 10000000)
 

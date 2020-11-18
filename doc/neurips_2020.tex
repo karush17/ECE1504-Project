@@ -198,24 +198,30 @@ One can leverage contraction theory \cite{banach, contraction} to highlight math
 \begin{gather}
   \tau f_{1}(w) - \tau f_{2}(w) \leq ||f_{1}(w) - f_{2}(w)||,\; \forall w \label{eq:contraction}
 \end{gather} 
-\autoref{eq:contraction} is a generalization of the fixed-point theory in Banach metric spaces \cite{contraction} which provides suitable conditions for assessing stability of nonlinear systems. We borrow from this insight in order to form a contraction on nonlinear interpolation bounds which can be interpreted as a continuum in a lonlinear space. To utilize a contraction mapping on $I_{IN}$, we seek a conraction operator $\mathcal{T}$ which is tractable. A suitable choice is the alternate Boltzmann (mellowmax) operator \cite{mellowmax} $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ which may be interpreted as an energy-based function. Retaining properties of the Boltzmann distribution, mellowmax is an asymptotically stable formulation of the Gibbs distribution. Mellowmax has been suitably adopted in control and learning settings \cite{sql,emix} wherein the probability distribution forms a continuum over the input space. Additionally, the exponent in $\mathcal{T}$ is tractable as it is followed by the $\log$ which prevents the arguments from exploding. Proposition \autoref{two} depicts the contraction property of $\mathcal{T}$. 
+\autoref{eq:contraction} is a generalization of the fixed-point theory in Banach metric spaces \cite{contraction} which provides suitable conditions for assessing stability of nonlinear systems. The key component of evaluating a nonlinear system is motivated by its convergence towards a fixed point in the Banach metric space. Convergence towards a fixed point indicates stability of the overall mapping. We borrow from this insight in order to form a contraction on nonlinear interpolation bounds which can be interpreted as a continuum in a nonlinear space. Upon realizing input samples as points in this continuous nonlinear space, a simple yet elegant formulation of a contraction mapping can be achieved. To utilize a contraction mapping on $I_{IN}$, we seek a contraction operator $\mathcal{T}$ which is tractable. A suitable choice is the alternate Boltzmann (mellowmax) operator introduced in \cite{mellowmax}. The Mellowmax operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ which may be interpreted as an energy-based function. Retaining properties of the Boltzmann distribution, mellowmax is an asymptotically stable formulation of the Gibbs distribution. Mellowmax has been suitably adopted in control and learning settings \cite{sql,emix} wherein the probability distribution forms a continuum over the input space. Additionally, the exponent in $\mathcal{T}$ is tractable as it is followed by the $\log$ which prevents the arguments from exploding. Proposition \autoref{two} depicts the contraction property of $\mathcal{T}$. 
 \begin{customthm}{2}\label{two}
   Given a function $f(w):w\rightarrow \mathbb{R}$, the operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ forms a contraction on $f(w)$. 
 \end{customthm}
-We leverage the result of Proposition \autoref{two} to obtian a tractable lower bound on $I_{IN}$. This requires summing over interpolating samples $1:K$ of the distribution. The novel bound $I_{N}$ obtained by operating $\mathcal{T}$ on interpolation terms is expressed in Proposition \autoref{novelbound}. 
-\begin{customthm}{3}\label{novelbound}
+We leverage the result of Proposition \autoref{two} to obtain a tractable lower bound on $I_{IN}$. This requires summing over interpolating samples $1:K$ of the distribution. The novel bound $I_{N}$ obtained by operating $\mathcal{T}$ on interpolation terms is expressed in Proposition \autoref{prop3}. Note that the sum in the first interpolation term requires computation of the inner expectation which now depends on the distribution conditioned on each iterate. This facilitates tractability since the estimates obtained as a result of individual conditioning would be accurate in comparison to estimates based on a single sample. 
+\begin{customthm}{3}\label{prop3}
   If the operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ is a contraction mapping $\forall w$, then the nonlinear interpolation bound $I_{IN}$ can be further simplified as expressed in \autoref{eq:novelbound}. 
 \begin{multline}  
   I_{IN} \geq I_{N} \triangleq 1 + \log \sum_{i=1}^{K} \exp{\mathbb{E}_{p(x_{1:K})p(y|x_{i})}[\log\frac{e^{f(x_{i},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]}\\ \log \sum_{i=1}^{K} \exp{\mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{i},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]} \label{eq:novelbound}
 \end{multline} 
 \label{novelbound} 
 \end{customthm}
-\autoref{eq:novelbound} is a lower bound on $I_{IN}$ which indicates that the novel bound $I_{N}$ is also a lower bound on $I_{NCE}$ with high probability. Thus, one can safely make the following claim,
+\autoref{eq:novelbound} is a lower bound on $I_{IN}$ which indicates that the novel bound $I_{N}$ is also a lower bound on $I_{NCE}$ with high probability since $I_{IN} = I_{NCE}$ at $\gamma=1$. Thus, one can safely make the following claim,
 \begin{gather}
   I(X;Y) \geq I_{NCE} \geq I_{N} \label{eq:main}
 \end{gather}
-\autoref{eq:main} obtained as a result of Proposition \autoref{novelbound} highlights the main finding of our work. Theoretically, $I_{N}$ retains the properties of $I_{IN}$ and would depict analogous convergence properties to $I_{IN}$ in the case of settings with large batch sizes. Additionally, the bias-variance trade off arising as a virtue of nonlinear interpolation presents $I_{N}$ as a suitable replacement over $I_{NCE}$. Although theoretical in nature, our findings motivate empirical validation and application of the proposed bound.
-
+\autoref{eq:main} can be further used to validate the suitability of the novel bound $I_{N}$ as a replacement to $I_{NCE}$ in Proposition \autoref{one}. This leads us to formulate the new generalization bound presented in \autoref{prop4}.
+\begin{customthm}{4}\label{prop4}
+  Since $I_{NCE} \geq I_{N}$ with high probability, the generalization bound in Proposition \autoref{one} can be simplified as follows,
+  \begin{gather}
+    \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I_{N}) \leq \bar{\psi}^{*-1}(I_{NCE})
+  \end{gather} 
+\end{customthm}
+Proposition \autoref{prop3} and Proposition \autoref{prop4} obtained as a result of \autoref{eq:contraction} highlight the main finding of our work. Theoretically, $I_{N}$ retains the properties of $I_{IN}$ and would depict convergence analogous to $I_{IN}$ in settings with large batch sizes. Additionally, the bias-variance trade off arising as a virtue of nonlinear interpolation presents $I_{N}$ as a suitable replacement to $I_{NCE}$ in Proposition \autoref{one}. On the other hand, an empirical comparison of stability between $I_{NCE}$ and $I_{N}$ may be difficult observe. This arises as a direct consequence of interpolation combined with dimensional contraction which may lead $I_{N}$ to collapse for some iterates. Although theoretical in nature, our findings motivate empirical validation and application of the proposed bound. 
 \section{Experiments}
 % state your objectives and what you wish to assess
 \subsection{Setup}
@@ -229,7 +235,17 @@ We leverage the result of Proposition \autoref{two} to obtian a tractable lower 
 \bibliographystyle{unsrt} 
 \small{\bibliography{sample}}
 
-% \includepdf[pages=-]{Appendix}
+\newpage
+\appendix
+\section{Proofs}
 
+\section{Additional Results}
+
+
+\section{Implementation Details}
+
+\subsection{Note on Experiment Setup}
+
+\subsection{Hyperparameters}
 
 \end{document}
