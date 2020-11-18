@@ -183,13 +183,38 @@ While the bound in \autoref{eq:impbound} is generalizable to variables with no m
 % provide your novelty, explain its usage well
 % maybe use extreme value theory to prove the tightness of InfoNCE
 % maybe combine InfoNCE with control bound
-The bound expressed in \autoref{eq:bound} can be improved by using the multi-sample InfoNCE bound. This arises as a direct consequence of the fact that $I(X;Y) \geq I_{NCE}$. We formalize this finding in Theorem \autoref{one} and defer all proofs to Appendix. 
+The bound expressed in \autoref{eq:bound} can be improved by using the multi-sample InfoNCE bound. This arises as a direct consequence of the fact that $I(X;Y) \geq I_{NCE}$. We formalize this finding in Proposition \autoref{one} and defer all proofs to Appendix. 
 \begin{customthm}{1}\label{one}
   If $X_{i}-Y_{i}$ has the expected cumulant-generation function $\bar{\psi_{i}}(\lambda)$ and the inverse of the convex conjugate of $\bar{\psi}$ denoted by $\bar{\psi}^{*-1}$ exists, then the improved bound utilizing $I_{NCE}$ can be expressed as follows,
 \begin{gather}
   \mathbb{E}[X_{i} - Y_{i}] \leq \bar{\psi}^{*-1}(I_{NCE}) \label{eq:newbound}
 \end{gather} 
 \end{customthm}
+While Proposition \autoref{one} presents an improvement over the original bound, the expression makes use of $I_{NCE}$ which demonstrates high bias and saturation at $log K$. This motivates the need for a bound which can retain the tightness of $I_{NCE}$ and at the same time trade off bias with variance. 
+
+To address the improvement of generlization bound, we turn our attention to non-linear interpolation bound $I_{IN}$ introduced in the previous section. Interpolation aids in the trade off between bias and variance and improves the bound's stability at larger batch sizes. More specifically, $I_{IN}$ saturates at $\log \frac{K}{\gamma}$. However, the tightness of $I_{IN}$ with respect to $I_{NCE}$ cannot be validated as a result of nonlinear iterates during interpolation. For $\gamma\neq 1$, $I_{IN} \neq I_{NCE}$ which poses a hindrance in the comparison of $I_{IN}$ to $I_{NCE}$. However, a lower bound on $I_{IN}$ can yield a lower bound on $I_{NCE}$ with high probability since $I_{IN} = I_{NCE}$ at $\gamma=1$. Thus, obtaining a tractable lower bound on $I_{IN}$ would further improve generlization and strengthen the claim of Proposition \autoref{one}. 
+
+One can leverage contraction theory \cite{banach, contraction} to highlight mathematical properties which would aid in extracting a tractable bound. Such a mapping guarantees convergence in asymptotically-stable nonlinear systems \cite{contraction} and provides a dynamical framework for assessing stability of bounds \cite{sql}. A contraction mapping between any two functions $f_{1}(w)$ and $f_{2}(w)$ implies that the norm distance between $f_{1}(w)$ and $f_{2}(w)$ decays at a constant (in some cases geometric \cite{banach}) rate. Given a contraction operator $\tau$ when iteratively applied on $f_{1}(w)$ and $f_{2}(w)$, the mapping $\tau f_{1}(w) - \tau f_{2}(w)$ is a contraction if the inequality in \autoref{eq:contraction} is satisfied.
+\begin{gather}
+  \tau f_{1}(w) - \tau f_{2}(w) \leq ||f_{1}(w) - f_{2}(w)||,\; \forall w \label{eq:contraction}
+\end{gather} 
+\autoref{eq:contraction} is a generalization of the fixed-point theory in Banach metric spaces \cite{contraction} which provides suitable conditions for assessing stability of nonlinear systems. We borrow from this insight in order to form a contraction on nonlinear interpolation bounds which can be interpreted as a continuum in a lonlinear space. To utilize a contraction mapping on $I_{IN}$, we seek a conraction operator $\mathcal{T}$ which is tractable. A suitable choice is the alternate Boltzmann (mellowmax) operator \cite{mellowmax} $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ which may be interpreted as an energy-based function. Retaining properties of the Boltzmann distribution, mellowmax is an asymptotically stable formulation of the Gibbs distribution. Mellowmax has been suitably adopted in control and learning settings \cite{sql,emix} wherein the probability distribution forms a continuum over the input space. Additionally, the exponent in $\mathcal{T}$ is tractable as it is followed by the $\log$ which prevents the arguments from exploding. Proposition \autoref{two} depicts the contraction property of $\mathcal{T}$. 
+\begin{customthm}{2}\label{two}
+  Given a function $f(w):w\rightarrow \mathbb{R}$, the operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ forms a contraction on $f(w)$. 
+\end{customthm}
+We leverage the result of Proposition \autoref{two} to obtian a tractable lower bound on $I_{IN}$. This requires summing over interpolating samples $1:K$ of the distribution. The novel bound $I_{N}$ obtained by operating $\mathcal{T}$ on interpolation terms is expressed in Proposition \autoref{novelbound}. 
+\begin{customthm}{3}\label{novelbound}
+  If the operator $\mathcal{T}f(w)=\log \sum_{w} \exp{f(w)}$ is a contraction mapping $\forall w$, then the nonlinear interpolation bound $I_{IN}$ can be further simplified as expressed in \autoref{eq:novelbound}. 
+\begin{multline}  
+  I_{IN} \geq I_{N} \triangleq 1 + \log \sum_{i=1}^{K} \exp{\mathbb{E}_{p(x_{1:K})p(y|x_{i})}[\log\frac{e^{f(x_{i},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]}\\ \log \sum_{i=1}^{K} \exp{\mathbb{E}_{p(x_{1:K})p(y)}[\log\frac{e^{f(x_{i},y)}}{\gamma m(y;x_{1:K})+(1-\gamma)q(y)}]} \label{eq:novelbound}
+\end{multline} 
+\label{novelbound} 
+\end{customthm}
+\autoref{eq:novelbound} is a lower bound on $I_{IN}$ which indicates that the novel bound $I_{N}$ is also a lower bound on $I_{NCE}$ with high probability. Thus, one can safely make the following claim,
+\begin{gather}
+  I(X;Y) \geq I_{NCE} \geq I_{N} \label{eq:main}
+\end{gather}
+\autoref{eq:main} obtained as a result of Proposition \autoref{novelbound} highlights the main finding of our work. Theoretically, $I_{N}$ retains the properties of $I_{IN}$ and would depict analogous convergence properties to $I_{IN}$ in the case of settings with large batch sizes. Additionally, the bias-variance trade off arising as a virtue of nonlinear interpolation presents $I_{N}$ as a suitable replacement over $I_{NCE}$. Although theoretical in nature, our findings motivate empirical validation and application of the proposed bound.
 
 \section{Experiments}
 % state your objectives and what you wish to assess

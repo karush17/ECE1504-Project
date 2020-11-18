@@ -145,4 +145,30 @@ Thomas~M. Cover and Joy~A. Thomas.
   Telecommunications and Signal Processing)}.
 \newblock Wiley-Interscience, USA, 2006.
 
+\bibitem{banach}
+Krzysztof Ciesielski et~al.
+\newblock On stefan banach and some of his results.
+\newblock {\em Banach Journal of Mathematical Analysis}, 1(1), 2007.
+
+\bibitem{contraction}
+Stefan Banach.
+\newblock On operations in abstract sets and their application to integral
+  equations.
+\newblock 1922.
+
+\bibitem{sql}
+Tuomas Haarnoja, Haoran Tang, Pieter Abbeel, and Sergey Levine.
+\newblock Reinforcement learning with deep energy-based policies.
+\newblock {\em arXiv preprint arXiv:1702.08165}, 2017.
+
+\bibitem{mellowmax}
+Kavosh Asadi and Michael~L Littman.
+\newblock An alternative softmax operator for reinforcement learning.
+\newblock In {\em International Conference on Machine Learning}, 2017.
+
+\bibitem{emix}
+Karush Suri, Xiao~Qi Shi, Konstantinos Plataniotis, and Yuri Lawryshyn.
+\newblock Energy-based surprise minimization for multi-agent value
+  factorization, 2020.
+
 \end{thebibliography}

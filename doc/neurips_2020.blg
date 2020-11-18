@@ -8,45 +8,46 @@ Warning--I didn't find a database entry for "zu"
 Warning--empty booktitle in russo
 Warning--empty booktitle in xu
 Warning--empty booktitle in steinke
-You've used 25 entries,
+Warning--empty journal in contraction
+You've used 30 entries,
             1791 wiz_defined-function locations,
-            567 strings with 7928 characters,
-and the built_in function-call counts, 5941 in all, are:
-= -- 482
-> -- 329
+            588 strings with 8649 characters,
+and the built_in function-call counts, 6738 in all, are:
+= -- 538
+> -- 377
 < -- 7
-+ -- 118
-- -- 93
-* -- 341
-:= -- 893
-add.period$ -- 69
-call.type$ -- 25
-change.case$ -- 24
++ -- 136
+- -- 106
+* -- 376
+:= -- 1030
+add.period$ -- 83
+call.type$ -- 30
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 266
-empty$ -- 597
-format.name$ -- 93
-if$ -- 1372
+cite$ -- 34
+duplicate$ -- 307
+empty$ -- 683
+format.name$ -- 106
+if$ -- 1548
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 16
-newline$ -- 118
-num.names$ -- 25
-pop$ -- 134
+int.to.str$ -- 30
+missing$ -- 20
+newline$ -- 142
+num.names$ -- 30
+pop$ -- 157
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 175
+skip$ -- 194
 stack$ -- 0
 substring$ -- 289
-swap$ -- 91
+swap$ -- 96
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 47
-width$ -- 27
-write$ -- 246
-(There were 5 warnings)
+warning$ -- 4
+while$ -- 52
+width$ -- 32
+write$ -- 294
+(There were 6 warnings)
