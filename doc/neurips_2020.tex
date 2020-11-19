@@ -16,7 +16,10 @@
 
 % to avoid loading the natbib package, add option nonatbib:
     %  \usepackage[nonatbib]{neurips_2020}
-
+\usepackage[british]{babel}
+\usepackage{hhline}
+\usepackage{bookmark}
+\usepackage{multirow}
 \usepackage{graphics}
 \usepackage{textcomp}
 \usepackage{graphicx}
@@ -41,6 +44,7 @@
     urlcolor=blue,
     citecolor=blue
 }
+\captionsetup[table]{skip=5pt}
 
 \newtheorem{innercustomgeneric}{\customgenericname}
 \providecommand{\customgenericname}{}
@@ -229,6 +233,33 @@ Proposition \autoref{prop3} and Proposition \autoref{prop4} obtained as a result
 
 \subsection{Unsupervised Instant Discrimination}
 % provide tabular results, emphasize on whay and how
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \resizebox{\textwidth}{!}{
+  \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
+    Architecture & Datasets & \multicolumn{2}{c|}{CE} & \multicolumn{2}{c|}{DV} & \multicolumn{2}{c|}{InfoNCE} & \multicolumn{2}{c|}{KL} & \multicolumn{2}{c}{RKL}\\
+    % \hline
+    % \textbf{Inactive Modes} & \textbf{Description}\\
+    \cline{3-12}
+    & & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc.\\
+    %\hhline{~--}
+    \hline
+     & MNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+     & FashionMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+    ResNet-18 & EMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+     & CIFAR10 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+     & CIFAR100 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\ \hline
+     & MNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+     & FashionMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+    ResNet-34 & EMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+     & CIFAR10 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
+     & CIFAR100 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\ \hline
+
+  \end{tabular}}
+  \caption{Mode Transition Times}
+\end{table}
 
 \section{Conclusion}
 
