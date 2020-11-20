@@ -230,45 +230,44 @@ Proposition \autoref{prop3} and Proposition \autoref{prop4} obtained as a result
 % state your objectives and what you wish to assess
 Our experiments to evaluate the suitability of variational bounds in the generalization setup. More specfically, we aim to answer the following two questions; (1) Which variational bounds are suitable for generalization settings? and (2) How do these bounds scale to large number of samples in data distribution? 
 
-\textbf{Setup}: Our experiments consist of unsupervised instant discrimination tasks \cite{visual} which involve the recognition of images based on MI. The setup consists of three standard benchmarks; MNIST, FashionMNIST and CIFAR10, and two large-scale datasets; EMNIST (Letters) and CIFAR100. In order to study the effect of deep architectures we employ ResNET-18 and ResNet-34 modules. The comparison consists of 5 different MI objectives with InfoNCE (as expressed in $I_{NCE}$) and Donsker-Vardhan (DV) loss (based on \cite{infomax}) as conventional objectives and Jensen-Shannon Divergence (JSD), KL \cite{kl} and Reverse KL (RKL) as $\phi$-divergence measures. Each objective maximizes similarity between logits and feature representations. The fully-supervised Cross-Entropy (CE) is additionally considered as a baseline. Objectives on the standard benchmarks are trained and evaluated for 200 epochs while large-scale datasets make use of 600 epochs. We direct the curious reader to Appendix for experiment details and hyperparameters.  
+\textbf{Setup}: Our experiments consist of unsupervised instant discrimination tasks \cite{visual} which involve the recognition of images based on MI. The setup consists of three standard benchmarks; MNIST, FashionMNIST and CIFAR10, and two large-scale datasets; EMNIST (Letters) and CIFAR100. In order to study the effect of deep architectures we employ ResNET-18 and ResNet-34 modules. The comparison consists of 4 different MI objectives with InfoNCE (as expressed in $I_{NCE}$) and Donsker-Vardhan (DV) loss (based on \cite{infomax}) as conventional objectives and Jensen-Shannon Divergence (JSD) and Reverse KL (RKL) as $\phi$-divergence measures. Each objective maximizes similarity between logits and feature representations. The fully-supervised Cross-Entropy (CE) is additionally considered as a baseline. Objectives on the standard benchmarks are trained and evaluated for 200 epochs while large-scale datasets make use of 600 epochs. We direct the curious reader to Appendix for experiment details and hyperparameters.  
 % explain the setup 
+
+\textbf{Unsupervised Instant Discrimination}: 
+% provide tabular results, emphasize on whay and how
 
 \begin{table*}[ht]
   \centering
   \renewcommand{\arraystretch}{1.2}
   \resizebox{\textwidth}{!}{
   \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
-    Architecture & Datasets & \multicolumn{2}{c|}{CE} & \multicolumn{2}{c|}{DV} & \multicolumn{2}{c|}{InfoNCE} & \multicolumn{2}{c|}{KL} & \multicolumn{2}{c}{RKL}\\
+    Architecture & Datasets & \multicolumn{2}{c|}{CE} & \multicolumn{2}{c|}{JSD} & \multicolumn{2}{c|}{DV} & \multicolumn{2}{c|}{InfoNCE} & \multicolumn{2}{c}{RKL}\\
     % \hline
     % \textbf{Inactive Modes} & \textbf{Description}\\
     \cline{3-12}
     & & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc. & Gen. Error & Top1 Acc.\\
     %\hhline{~--}
     \hline
-     & MNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-     & FashionMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-    ResNet-18 & EMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-     & CIFAR10 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-     & CIFAR100 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\ \hline
-     & MNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-     & FashionMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-    ResNet-34 & EMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-     & CIFAR10 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
-     & CIFAR100 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\ \hline
+     & MNIST & 0.02 & 95.55 & 0.08 & 92.04 & 6.27 & 32.16 & 0.13 & \textbf{92.34} & \textbf{0.06} & 90.86\\
+     & FashionMNIST & 0.11 & 95.13 & \textbf{0.06} & \textbf{92.41} & 3.64 & 29.44 & 0.11 & 92.24 & \textbf{0.06} & 92.25\\
+    ResNet-18 & EMNIST & 0.15 & 81.02 & 0.04 & 80.40 & - & 31.57 & 0.07 & \textbf{81.13} & \textbf{0.03} & 80.65\\
+     & CIFAR10 & 0.10 & 80.57 & \textbf{0.04} & 71.18 & 1.17 & 31.29 & 0.07 & 70.09 & 0.05 & \text{71.36}\\
+     & CIFAR100 & 0.17 & 52.02 & \textbf{0.05} & 40.59 & 1.67 & 10.06 & 0.13 & \textbf{41.24} & 0.08 & 39.28\\ \hline
+     & MNIST & 0.12 & 96.59 & 0.05 & 92.82 & 2.85 & 24.40 & \textbf{0.04} & \textbf{93.10} & 0.06 & 92.97\\
+     & FashionMNIST & 0.09 & 96.37 & \textbf{0.04} & 93.32 & 9.10 & 28.96 & 0.13 & 93.08 & 0.08 & \textbf{93.47}\\
+    ResNet-34 & EMNIST & 0.09 & 83.43 & \textbf{0.03} & 80.66 & - & 16.97 & 0.07 & \textbf{83.16} & 0.04 & 83.10\\
+     & CIFAR10 & 0.13 & 81.81 & \textbf{0.04} & 71.65 & 1.23 & 27.24 & 0.08 & 71.87 & 0.06 & \textbf{72.42}\\
+     & CIFAR100 & 0.13 & 52.45 & 0.08 & 37.92 & 1.89 & 7.41 & 0.15 & 39.75 & \textbf{0.07} & \textbf{42.04}\\ \hline
   \end{tabular}}
-  \caption{Mode Transition Times}
+  \caption{Summary of results based on Generalization Error (Gen. Error) and Top1 Accuracy (Acc) for all objectives on standard and large-scale benchmarks using ResNet-18 and ResNet-34 models. Highlighted entries depict best performing objectives in the unsupervised setting. $\phi$-divergence measures such as JSD and RKL depict improved generalization and performance comparable to conventional MI-based InfoNCE and fully-supervised CE. The DV objective on the other hand, demonstrates instability as a result of exponential estimates. For complete results on bias and variance refer to Appendix.}
   \label{tab:table}
 \end{table*}
-
 \begin{figure*}[ht]
-  \centering
-  \includegraphics[height=3cm,width=12cm]{34_val_loss.png}
-  \caption{some text}
+\centering
+  \includegraphics[height=2.5cm,width=14cm]{18_val_loss.png}
+  \caption{Validation Loss for variational objectives on standard and large-scale benchmarks for the ResNet-18 model. $\phi$-divergence measures demonstrate improved stability and generalization in comparison to conventional InfoNCE and fully-supervised CE which depict high bias. Conventional DV, on the other hand, presents high variance and unstable convergence as a result of exponential estimates of the partition function.}
   \label{fig:plot}
 \end{figure*}
-
-\textbf{Unsupervised Instant Discrimination}: 
-% provide tabular results, emphasize on whay and how
 
 \section{Conclusion}
 

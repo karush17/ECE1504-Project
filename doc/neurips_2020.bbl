@@ -1,0 +1,174 @@
+\begin{thebibliography}{10}
+
+\bibitem{russo}
+Daniel Russo and James Zou.
+\newblock Controlling bias in adaptive data analysis using information theory.
+\newblock volume~51 of {\em Proceedings of Machine Learning Research}, pages
+  1232--1240. PMLR, 2016.
+
+\bibitem{xu}
+Aolin Xu and Maxim Raginsky.
+\newblock Information-theoretic analysis of generalization capability of
+  learning algorithms.
+\newblock NIPS'17, 2017.
+
+\bibitem{negrea}
+Jeffrey Negrea, Mahdi Haghifam, Gintare~Karolina Dziugaite, Ashish Khisti, and
+  Daniel~M Roy.
+\newblock Information-theoretic generalization bounds for sgld via
+  data-dependent estimates.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2019.
+
+\bibitem{bu}
+Yuheng Bu, Shaofeng Zou, and Venugopal~V Veeravalli.
+\newblock Tightening mutual information based bounds on generalization error.
+\newblock {\em IEEE Journal on Selected Areas in Information Theory}, 2020.
+
+\bibitem{mine}
+Mohamed~Ishmael Belghazi, Aristide Baratin, Sai Rajeswar, Sherjil Ozair, Yoshua
+  Bengio, Aaron Courville, and R~Devon Hjelm.
+\newblock Mine: Mutual information neural estimation, 2018.
+
+\bibitem{control}
+Jiantao Jiao, Yanjun Han, and Tsachy Weissman.
+\newblock Dependence measures bounding the exploration bias for general
+  measurements.
+\newblock In {\em 2017 IEEE International Symposium on Information Theory
+  (ISIT)}, pages 1475--1479. IEEE, 2017.
+
+\bibitem{book}
+S.~M. Ali and S.~D. Silvey.
+\newblock A general class of coefficients of divergence of one distribution
+  from another.
+\newblock {\em Journal of the royal statistical society series
+  b-methodological}, 28:131--142, 1966.
+
+\bibitem{measures}
+Jiantao Jiao, Thomas~A. Courtade, Albert No, Kartik Venkat, and Tsachy
+  Weissman.
+\newblock Information measures: The curious case of the binary alphabet.
+\newblock {\em IEEE Transactions on Information Theory}, 60(12):7616–7626,
+  Dec 2014.
+
+\bibitem{variational}
+Ben Poole, Sherjil Ozair, Aaron van~den Oord, Alexander~A Alemi, and George
+  Tucker.
+\newblock On variational bounds of mutual information.
+\newblock {\em arXiv preprint arXiv:1905.06922}, 2019.
+
+\bibitem{visual}
+Zhirong Wu, Yuanjun Xiong, Stella~X Yu, and Dahua Lin.
+\newblock Unsupervised feature learning via non-parametric instance
+  discrimination.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 3733--3742, 2018.
+
+\bibitem{cpc}
+Aaron van~den Oord, Yazhe Li, and Oriol Vinyals.
+\newblock Representation learning with contrastive predictive coding, 2019.
+
+\bibitem{cpcv2}
+Olivier~J. Hénaff, Aravind Srinivas, Jeffrey~De Fauw, Ali Razavi, Carl
+  Doersch, S.~M.~Ali Eslami, and Aaron van~den Oord.
+\newblock Data-efficient image recognition with contrastive predictive coding,
+  2020.
+
+\bibitem{infomax}
+R~Devon Hjelm, Alex Fedorov, Samuel Lavoie-Marchildon, Karan Grewal, Phil
+  Bachman, Adam Trischler, and Yoshua Bengio.
+\newblock Learning deep representations by mutual information estimation and
+  maximization, 2019.
+
+\bibitem{dv}
+MD~Donsker and SRS Varadhan.
+\newblock Large deviations for markov processes and the asymptotic evaluation
+  of certain markov process expectations for large times.
+\newblock In {\em Probabilistic Methods in Differential Equations}, pages
+  82--88. Springer, 1975.
+
+\bibitem{overfit}
+Daniel Russo and James Zou.
+\newblock How much does your data exploration overfit? controlling bias via
+  information usage, 2019.
+
+\bibitem{kuzborskij}
+Ilja Kuzborskij, Nicol{\`o} Cesa-Bianchi, and Csaba Szepesv{\'a}ri.
+\newblock Distribution-dependent analysis of gibbs-erm principle.
+\newblock {\em arXiv preprint arXiv:1902.01846}, 2019.
+
+\bibitem{sgld}
+Max Welling and Yee~W Teh.
+\newblock Bayesian learning via stochastic gradient langevin dynamics.
+\newblock In {\em Proceedings of the 28th international conference on machine
+  learning (ICML-11)}, pages 681--688, 2011.
+
+\bibitem{haghifam}
+Mahdi Haghifam, Jeffrey Negrea, Ashish Khisti, Daniel~M. Roy, and
+  Gintare~Karolina Dziugaite.
+\newblock Sharpened generalization bounds based on conditional mutual
+  information and an application to noisy, iterative algorithms, 2020.
+
+\bibitem{steinke}
+Thomas Steinke and Lydia Zakynthinou.
+\newblock {R}easoning {A}bout {G}eneralization via {C}onditional {M}utual
+  {I}nformation.
+\newblock Proceedings of Machine Learning Research, pages 3437--3452. PMLR,
+  2020.
+
+\bibitem{moco}
+Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick.
+\newblock Momentum contrast for unsupervised visual representation learning,
+  2020.
+
+\bibitem{mocov2}
+Xinlei Chen, Haoqi Fan, Ross Girshick, and Kaiming He.
+\newblock Improved baselines with momentum contrastive learning, 2020.
+
+\bibitem{simclr}
+Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton.
+\newblock A simple framework for contrastive learning of visual
+  representations, 2020.
+
+\bibitem{simclrv2}
+Ting Chen, Simon Kornblith, Kevin Swersky, Mohammad Norouzi, and Geoffrey
+  Hinton.
+\newblock Big self-supervised models are strong semi-supervised learners, 2020.
+
+\bibitem{kl}
+Solomon Kullback and Richard~A Leibler.
+\newblock On information and sufficiency.
+\newblock {\em The annals of mathematical statistics}, 22(1):79--86, 1951.
+
+\bibitem{cover}
+Thomas~M. Cover and Joy~A. Thomas.
+\newblock {\em Elements of Information Theory (Wiley Series in
+  Telecommunications and Signal Processing)}.
+\newblock Wiley-Interscience, USA, 2006.
+
+\bibitem{banach}
+Krzysztof Ciesielski et~al.
+\newblock On stefan banach and some of his results.
+\newblock {\em Banach Journal of Mathematical Analysis}, 1(1), 2007.
+
+\bibitem{contraction}
+Stefan Banach.
+\newblock On operations in abstract sets and their application to integral
+  equations.
+\newblock 1922.
+
+\bibitem{sql}
+Tuomas Haarnoja, Haoran Tang, Pieter Abbeel, and Sergey Levine.
+\newblock Reinforcement learning with deep energy-based policies.
+\newblock {\em arXiv preprint arXiv:1702.08165}, 2017.
+
+\bibitem{mellowmax}
+Kavosh Asadi and Michael~L Littman.
+\newblock An alternative softmax operator for reinforcement learning.
+\newblock In {\em International Conference on Machine Learning}, 2017.
+
+\bibitem{emix}
+Karush Suri, Xiao~Qi Shi, Konstantinos Plataniotis, and Yuri Lawryshyn.
+\newblock Energy-based surprise minimization for multi-agent value
+  factorization, 2020.
+
+\end{thebibliography}
