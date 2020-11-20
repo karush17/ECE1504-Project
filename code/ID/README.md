@@ -13,7 +13,7 @@ The implementation is easy to run and consists of all the divregence metrics pro
   - `--low-dim`- the embedding size is controlled by the parameter low-dim.
   - `--phi`- selects the divergence loss to be used during training (choose from JSD, KL, RKL, DV and InfoNCE).
 
-During training, we monitor training loss, validation loss, top-1 and top-5 accuracies. Results are stored as a `log.pkl` file. 
+Dataset instances are sotred in the `cifar.py` and `mnist.py` files in `datasets` folder. These can be used to execute training on different datasets. During training, we monitor training loss, validation loss, top-1 and top-5 accuracies. Results are stored as a `log.pkl` file. 
 
 ## Citation
 If you find my implementation useful then please cite the following-
