@@ -228,13 +228,12 @@ We leverage the result of Proposition \autoref{two} to obtain a tractable lower 
 Proposition \autoref{prop3} and Proposition \autoref{prop4} obtained as a result of \autoref{eq:contraction} highlight the main finding of our work. Theoretically, $I_{N}$ retains the properties of $I_{IN}$ and would depict convergence analogous to $I_{IN}$ in settings with large batch sizes. Additionally, the bias-variance trade off arising as a virtue of nonlinear interpolation presents $I_{N}$ as a suitable replacement to $I_{NCE}$ in Proposition \autoref{one}. On the other hand, an empirical comparison of stability between $I_{NCE}$ and $I_{N}$ may be difficult observe. This arises as a direct consequence of interpolation combined with dimensional contraction which may lead $I_{N}$ to collapse for some iterates. Although theoretical in nature, our findings motivate empirical validation and application of the proposed bound. 
 \section{Experiments}
 % state your objectives and what you wish to assess
-\subsection{Setup}
+Our experiments to evaluate the suitability of variational bounds in the generalization setup. More specfically, we aim to answer the following two questions; (1) Which variational bounds are suitable for generalization settings? and (2) How do these bounds scale to large number of samples in data distribution? 
+
+\textbf{Setup}: Our experiments consist of unsupervised instant discrimination tasks \cite{visual} which involve the recognition of images based on MI. The setup consists of three standard benchmarks; MNIST, FashionMNIST and CIFAR10, and two large-scale datasets; EMNIST (Letters) and CIFAR100. In order to study the effect of deep architectures we employ ResNET-18 and ResNet-34 modules. The comparison consists of 5 different MI objectives with InfoNCE (as expressed in $I_{NCE}$) and Donsker-Vardhan (DV) loss (based on \cite{infomax}) as conventional objectives and Jensen-Shannon Divergence (JSD), KL \cite{kl} and Reverse KL (RKL) as $\phi$-divergence measures. Each objective maximizes similarity between logits and feature representations. The fully-supervised Cross-Entropy (CE) is additionally considered as a baseline. Objectives on the standard benchmarks are trained and evaluated for 200 epochs while large-scale datasets make use of 600 epochs. We direct the curious reader to Appendix for experiment details and hyperparameters.  
 % explain the setup 
 
-\subsection{Unsupervised Instant Discrimination}
-% provide tabular results, emphasize on whay and how
-
-\begin{table}[H]
+\begin{table*}[ht]
   \centering
   \renewcommand{\arraystretch}{1.2}
   \resizebox{\textwidth}{!}{
@@ -256,10 +255,20 @@ Proposition \autoref{prop3} and Proposition \autoref{prop4} obtained as a result
     ResNet-34 & EMNIST & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
      & CIFAR10 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\
      & CIFAR100 & 1365 & 1260 & 1024 & $\mu$ s & 1024 & $\mu$ s & 1365 & 1260 & 1024 & $\mu$ s\\ \hline
-
   \end{tabular}}
   \caption{Mode Transition Times}
-\end{table}
+  \label{tab:table}
+\end{table*}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[height=3cm,width=12cm]{34_val_loss.png}
+  \caption{some text}
+  \label{fig:plot}
+\end{figure*}
+
+\textbf{Unsupervised Instant Discrimination}: 
+% provide tabular results, emphasize on whay and how
 
 \section{Conclusion}
 
