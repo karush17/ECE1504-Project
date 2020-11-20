@@ -107,7 +107,7 @@ class NCECriterion(nn.Module):
         super(NCECriterion, self).__init__()
         self.nLem = nLem
 
-    def forward(self, x, targets):
+    def forward(self, x, targets, measure):
         batchSize = x.size(0)
         K = x.size(1)-1
         Pnt = 1 / float(self.nLem)
@@ -130,15 +130,17 @@ class NCECriterion(nn.Module):
         lnPmtsum = lnPmt.sum(0)
         lnPonsum = lnPon.view(-1, 1).sum(0)
         
-        loss_temp = - (lnPmtsum + lnPonsum) / batchSize
-        # For f-divergences
-        # E_pos = get_positive_expectation(loss_temp, measure='RKL', average=False)
-        # E_neg = get_negative_expectation(loss_temp, measure='RKL', average=False)
-        # For DV
-        # E_pos = lnPmt.mean(0)
-        # E_neg = torch.log(torch.exp(lnPonsum).mean(0)+2e0)
-        # loss = E_neg - E_pos
-        
+        if measure=="InfoNCE":
+            loss_temp = - (lnPmtsum + lnPonsum) / batchSize
+        elif measure=="DV":
+            E_pos = lnPmt.mean(0)
+            E_neg = torch.log(torch.exp(lnPonsum).mean(0)+2e0)
+            loss_temp = E_neg - E_pos
+        else:
+            E_pos = get_positive_expectation(loss_temp, measure=measure, average=False)
+            E_neg = get_negative_expectation(loss_temp, measure=measure, average=False)
+            loss_temp = E_neg - E_pos
+
         return loss_temp
 
 

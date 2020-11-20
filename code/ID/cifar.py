@@ -40,6 +40,8 @@ parser.add_argument('--nce-t', default=0.1, type=float,
                     metavar='T', help='temperature parameter for softmax')
 parser.add_argument('--nce-m', default=0.5, type=float,
                     metavar='M', help='momentum for non-parametric updates')
+parser.add_argument('--phi',default='JSD', type=str,
+                     help='divergence loss to be used for training')
 
 args = parser.parse_args()
 
@@ -143,7 +145,7 @@ def train(epoch):
 
         features = net(inputs)
         outputs = lemniscate(features, indexes)
-        loss = criterion(outputs, indexes)
+        loss = criterion(outputs, indexes, args.phi)
         # loss = fenchel_dual_loss(features, inputs, measure='W1')
 
         loss.backward()
