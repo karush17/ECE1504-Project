@@ -265,15 +265,15 @@ Our experiments consist of unsupervised instance discrimination tasks \cite{visu
 \end{table*}
 \begin{figure*}[ht]
 \centering
-  \includegraphics[height=2.5cm,width=14cm]{18_val_loss.png}
-  \caption{Validation Loss for variational objectives on standard and large-scale benchmarks for the ResNet-18 model. $\phi$-divergence measures demonstrate improved stability and generalization in comparison to conventional InfoNCE and fully-supervised CE which depict high bias. Conventional DV, on the other hand, presents high variance and unstable convergence as a result of exponential estimates of the partition function.}
+  \includegraphics[height=2.5cm,width=14cm]{18_gen_error.png}
+  \caption{Gen. Error for variational objectives on standard and large-scale benchmarks for the ResNet-18 model. $\phi$-divergence measures demonstrate improved stability and generalization in comparison to conventional InfoNCE and fully-supervised CE which depict high bias. Conventional DV, on the other hand, presents high variance and unstable convergence as a result of exponential estimates of the partition function.}
   \label{fig:plot}
 \end{figure*}
 \autoref{tab:table} presents the summary of results obtained from our empirical study of objectives. We compare generalization and performance of objectives based on Generalization Error (Gen. Error) and Top1 Classification Accuracy (Acc.) on standard and large-scale benchmarks using ResNet-18 and ResNet-34 models. Empirical evaluation of objectives depicts improved generalization of $\phi$-divergence based objectives in comparison to conventional InfoNCE and the fully-supervised setting of CE. JSD is found to be stable and best minimized the generalization error on 6 out of the 10 scenarios. RKL, on the other hand, yields competitive generalization and stability in comparison to JSD. InfoNCE demonstrates high bias among MI-based objectives. This is found to be consistent with the claims of \cite{variational} which highlight the necessity for accurate multi-sample objectives. DV objective depicts instability in convergence arising from high bias and variance in its estimates. The claims of \cite{variational} and \cite{infomax} support this empirical result. Large values of exponential estimates in conjunction with the requirement of a partition function pose hindrance to generalization. This hampers the utility of DV as an unsupervised learning objective. 
 
 One can compare the suitability of variational objectives across different architectures in order to best evaluate performance. JSD depicts consistent performance across ResNet-18 and ResNet-34 architectures. Additionally, JSD scales well to large-scale datasets and maintains a minimum generalization error. RKL, on the other hand, demonstrates suitable for ResNet-18 but falls short of optimum generalization on the deeper ResNet-34 model. Surprisingly, RKL depicts accurate recognition performance at test time which is indicative of its potential as an unsupervised objective. While JSD and RKL generalize well, they present high bias in their estimates. This is indicative of a moderately accurate performance at execution time. InfoNCE, on the other hand, depicts low variance in its estimates which results in the most accurate performance in the unsupervised setting. Additionally, the performance of InfoNCE is matched for shallow as well as deeper architectures. However, saturation of $I_{NCE}$ at large batch sizes and samples leads to a lose bound. This is indicative of its performance on large-scale datasets which consist of a larger number of negative samples and classes. The claim is further strengthened in \cite{variational} wherein MI estimates may take large values and lead to sub-optimal convrgence. 
 
-To better understand convergence and tightness of variational bounds, once can gain visual insights into their behavior during learning. \autoref{fig:plot} presents comparison of validation loss during training for all objectives on standard and large-scale benchmarks utilizing the ResNet-18 architecture. Insights obtained from \autoref{fig:plot} validate our claims on generalization drawn from \autoref{tab:table}. Unsupervised variational objectives demonstrate improved generalization as a result of minimimum validation error in comparison to the fully-supervised CE objective. Moreover, consistency of these objectives across all datasets validates stability in convergence. Out of unsupervised objectives, JSD and RKL demonstrate equivalent errors with JSD slightly outperforming the latter. Suitability of JSD on standard and large-scale datasets further validates its robustness to large sample sizes. This is not found consistent in InfoNCE which depicts slightly higher errors and delayed convergence on EMNIST and CIFAR100 datasets. Furthermore, instability of DV bound is validated as a result of no loss signal in the gradient. We direct the reader to Appendix for complete results.  
+To better understand convergence and tightness of variational bounds, once can gain visual insights into their behavior during learning. \autoref{fig:plot} presents comparison of generalization error during training for all objectives on standard and large-scale benchmarks utilizing the ResNet-18 architecture. Insights obtained from \autoref{fig:plot} validate our claims on generalization drawn from \autoref{tab:table}. Unsupervised variational objectives demonstrate improved generalization as a result of minimimum validation error in comparison to the fully-supervised CE objective. Moreover, consistency of these objectives across all datasets validates stability in convergence. Out of unsupervised objectives, JSD and RKL demonstrate equivalent errors with JSD slightly outperforming the latter. Suitability of JSD on standard and large-scale datasets further validates its robustness to large sample sizes. This is not found consistent in InfoNCE which depicts slightly higher errors and delayed convergence on EMNIST and CIFAR100 datasets. Furthermore, instability of DV bound is validated as a result of no loss signal in the gradient. We direct the reader to Appendix for complete results.  
 
 \section{Discussion}
 Generalization bounds present significant promise for yielding accurate learning algorithms. However, these bounds are often held intractable during empirical evaluation. To this end, we have revisited the generalization from the perspective of variational bounds of MI. Firstly, we identified failure modes which hinder a bound to learn data as a result of bias and variance in estimates. Based on these estimates, we formulate a theoretical alternative which is based on contraction theory and nonlinear interpolation bounds. The novel $I_{N}$ bound is a lower bound on nonlinear interpolation bound $I_{IN}$, and hence the InfoNCE bound $I_{NCE}$ with high probability. We then carry out empirical evaluations of variational bounds under the generalization setup in order to identify potential generalization candidates. Our study highlights the suitability of $phi$-divergences in $\alpha$-MI as suitable alternatives for generalization. Specifically, JSD and RKL demonstrate improved generalization on datasets with small and large sample sizes. Their performance is additionally found consistent on deeper architectures. 
@@ -365,11 +365,46 @@ Using the above result in $I_{IN}$ yields the lower bound $I_{N}$ and completes 
 \end{proof}
 
 \section{Additional Results}
-
+\subsection{ResNet-18}
+\begin{figure}[H]
+  \centering
+    \includegraphics[height=2.5cm,width=14cm]{18_gen_error.png}
+    \caption{Gen. Error for variational objectives on standard and large-scale benchmarks for the ResNet-18 model. $\phi$-divergence measures demonstrate improved stability and generalization in comparison to conventional InfoNCE and fully-supervised CE which depict high bias. Conventional DV, on the other hand, presents high variance and unstable convergence as a result of exponential estimates of the partition function.}
+  \end{figure}
+  \begin{figure}[H]
+    \centering
+      \includegraphics[height=2.5cm,width=14cm]{18_top1_acc.png}
+      \caption{Comparison of Top1 classification accuracies for variational objectives on standard and large-scale benchmarks for the ResNet-18 model. While fully-supervised CE demonstrates best performance, InfoNCE and $\phi$-divergence measures depict comparably accurate performance. Conventional DV, on the other hand, demonstrates a failure to learn.}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+        \includegraphics[height=2.5cm,width=14cm]{18_top5_acc.png}
+        \caption{Comparison of Top5 classification accuracies for variational objectives on standard and large-scale benchmarks for the ResNet-18 model. Performance is analogous to Top1 counterpart with variational bounds demonstrating improved performance on standard mnist and fashionmnist benchmarks.}
+      \end{figure}
+      
+\subsection{ResNet-34}
+\begin{figure}[H]
+  \centering
+    \includegraphics[height=2.5cm,width=14cm]{34_gen_error.png}
+    \caption{Gen. Error for variational objectives on standard and large-scale benchmarks for the ResNet-34 model. $\phi$-divergence measures scale to well to the deeper ResNet-34 model and maintain minimum bias in generalization.}
+  \end{figure}
+  \begin{figure}[H]
+    \centering
+      \includegraphics[height=2.5cm,width=14cm]{34_top1_acc.png}
+      \caption{Comparison of Top1 classification accuracies for variational objectives on standard and large-scale benchmarks for the ResNet-34 model. Bounds tend to overfit in the case of EMNIST dataset as a result of large (26) number of classes.}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+        \includegraphics[height=2.5cm,width=14cm]{34_top5_acc.png}
+        \caption{Comparison of Top5 classification accuracies for variational objectives on standard and large-scale benchmarks for the ResNet-34 model. Variational bounds demonstrate comparable performance to fully-supervised CE on MNIST, FashionMNIST and EMNIST benchmarks.}
+      \end{figure}
+      
 \section{Implementation Details}
 
-\subsection{Note on Experiment Setup}
+\subsection{Note on Experiments}
+The experimental setup is based on the instance discrimination framework of \cite{visual} which aims to extract rich feature representations from input images without parameteric estimations. We extend this setup to variational bounds for the purpose of assessing generalization in learning. While training on standard benchmarks consisted of 200 epochs, large-scale benchmarks make use of 600 epochs. Hyperparameters corresponding to each model were fixed and were only changed for the purpose of tuning DV objective. DV does not demonstrate learning on datasets as a result of exponential results which inject instability in gradients. While measures such as gradient clipping were used, they did little to improve the stability of DV. A more suitable approach o stabilize the gradient in DV could be by normalizing the objective with the running mean of the gradient as presented in \cite{infomax}. The normalization constant acts as the pseudo partition function which increases the stability of updates. However, in order to maintain uniformity in experiments and solely evaluate the role of variation bound, we do not make use of this trick. 
 
 \subsection{Hyperparameters}
+Hyperparameters for ResNet-18 and ResNet-34 are kept same for all tasks. While CE, JSD, InfoNCE, and RKL make use of the same set of hyperparameters, DV makes use of a separate learning rate. The following table presents hyperparameters used for experiments-
 
 \end{document}
