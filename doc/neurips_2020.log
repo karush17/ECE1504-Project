@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  20 NOV 2020 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  20 NOV 2020 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,48 +710,48 @@ Package hyperref Warning: No autoref name for `innercustomgeneric' on input line
 <18_val_loss.png, id=224, 1445.4pt x 289.08pt>
 File: 18_val_loss.png Graphic file (type png)
 <use 18_val_loss.png>
-Package pdftex.def Info: 18_val_loss.png  used on input line 267.
+Package pdftex.def Info: 18_val_loss.png  used on input line 268.
 (pdftex.def)             Requested size: 398.33534pt x 71.13177pt.
 
-Overfull \hbox (0.85036pt too wide) in paragraph at lines 267--268
+Overfull \hbox (0.85036pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
-(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [7 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_val_loss.png>] [8]) [9]
+[7 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_val_loss.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [8] [9]) [10]
 
-LaTeX Warning: Reference `control' on page 10 undefined on input line 287.
+LaTeX Warning: Reference `control' on page 11 undefined on input line 296.
 
-[10]
-
-Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 332.
-
+[11]
 
 Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 341.
 
 
-Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 347.
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 350.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 356.
 
 
 Package natbib Warning: There were undefined citations.
 
-[11] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
+[12] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13635 strings out of 479916
- 209308 string characters out of 5886642
+ 13640 strings out of 479916
+ 209355 string characters out of 5886642
  594186 words of memory out of 5000000
- 29643 multiletter control sequences out of 15000+600000
+ 29645 multiletter control sequences out of 15000+600000
  564957 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1662b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,77p,1662b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 {k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (11 pages, 1159977 bytes).
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (12 pages, 1164791 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 370 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
- 25723 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 25739 words of extra memory for PDF output out of 29859 (max. 10000000)
 
