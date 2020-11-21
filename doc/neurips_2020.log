@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  20 NOV 2020 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  20 NOV 2020 20:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,4 +621,204 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (k:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- (k:/texliv
+ (k:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (k:/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+ (k:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (k:/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+ (k:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (k:/texlive/2020/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package natbib Warning: Citation `cotnrol' on page 1 undefined on input line 90.
+
+[1
+
+
+{k:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 97.
+ (k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+Package natbib Warning: Citation `zu' on page 2 undefined on input line 107.
+
+[2]
+<dist.PNG, id=114, 384.43625pt x 83.31125pt>
+File: dist.PNG Graphic file (type png)
+<use dist.PNG>
+Package pdftex.def Info: dist.PNG  used on input line 138.
+(pdftex.def)             Requested size: 369.91104pt x 78.25027pt.
+ [3] [4 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG>]
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 190.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 197.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 199.
+
+[5]
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 205.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 209.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 209.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 221.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 221.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 223.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 228.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 228.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 228.
+
+[6]
+<18_gen_error.png, id=224, 2168.1pt x 289.08pt>
+File: 18_gen_error.png Graphic file (type png)
+<use 18_gen_error.png>
+Package pdftex.def Info: 18_gen_error.png  used on input line 268.
+(pdftex.def)             Requested size: 398.3133pt x 71.13177pt.
+
+Overfull \hbox (0.82831pt too wide) in paragraph at lines 268--269
+ [][] 
+ []
+
+[7 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [8] [9]) [10]
+
+LaTeX Warning: Reference `control' on page 11 undefined on input line 296.
+
+[11]
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 341.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 350.
+
+
+Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 356.
+
+File: 18_gen_error.png Graphic file (type png)
+<use 18_gen_error.png>
+Package pdftex.def Info: 18_gen_error.png  used on input line 371.
+(pdftex.def)             Requested size: 398.3133pt x 71.13177pt.
+
+Overfull \hbox (0.82831pt too wide) in paragraph at lines 371--372
+ [][] 
+ []
+
+<18_top1_acc.png, id=284, 1445.4pt x 289.08pt>
+File: 18_top1_acc.png Graphic file (type png)
+<use 18_top1_acc.png>
+Package pdftex.def Info: 18_top1_acc.png  used on input line 376.
+(pdftex.def)             Requested size: 398.33534pt x 71.13177pt.
+
+Overfull \hbox (0.85036pt too wide) in paragraph at lines 376--377
+ [][] 
+ []
+
+<18_top5_acc.png, id=285, 1445.4pt x 289.08pt>
+File: 18_top5_acc.png Graphic file (type png)
+<use 18_top5_acc.png>
+Package pdftex.def Info: 18_top5_acc.png  used on input line 381.
+(pdftex.def)             Requested size: 398.33534pt x 71.13177pt.
+
+Overfull \hbox (0.85036pt too wide) in paragraph at lines 381--382
+ [][] 
+ []
+
+
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+ [12]
+<34_gen_error.png, id=294, 2168.1pt x 289.08pt>
+File: 34_gen_error.png Graphic file (type png)
+<use 34_gen_error.png>
+Package pdftex.def Info: 34_gen_error.png  used on input line 388.
+(pdftex.def)             Requested size: 398.3133pt x 71.13177pt.
+
+Overfull \hbox (0.82831pt too wide) in paragraph at lines 388--389
+ [][] 
+ []
+
+<34_top1_acc.png, id=295, 1445.4pt x 289.08pt>
+File: 34_top1_acc.png Graphic file (type png)
+<use 34_top1_acc.png>
+Package pdftex.def Info: 34_top1_acc.png  used on input line 393.
+(pdftex.def)             Requested size: 398.33534pt x 71.13177pt.
+
+Overfull \hbox (0.85036pt too wide) in paragraph at lines 393--394
+ [][] 
+ []
+
+<34_top5_acc.png, id=296, 1445.4pt x 289.08pt>
+File: 34_top5_acc.png Graphic file (type png)
+<use 34_top5_acc.png>
+Package pdftex.def Info: 34_top5_acc.png  used on input line 398.
+(pdftex.def)             Requested size: 398.33534pt x 71.13177pt.
+
+Overfull \hbox (0.85036pt too wide) in paragraph at lines 398--399
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png>]
+
+Package natbib Warning: There were undefined citations.
+
+[14 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 13700 strings out of 479916
+ 210222 string characters out of 5886642
+ 594181 words of memory out of 5000000
+ 29674 multiletter control sequences out of 15000+600000
+ 565552 words of font info for 219 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,11n,77p,1662b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+{k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (14 pages, 7587695 bytes).
+PDF statistics:
+ 472 PDF objects out of 1000 (max. 8388607)
+ 415 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 25780 words of extra memory for PDF output out of 29859 (max. 10000000)
+

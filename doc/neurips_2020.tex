@@ -407,4 +407,23 @@ The experimental setup is based on the instance discrimination framework of \cit
 \subsection{Hyperparameters}
 Hyperparameters for ResNet-18 and ResNet-34 are kept same for all tasks. While CE, JSD, InfoNCE, and RKL make use of the same set of hyperparameters, DV makes use of a separate learning rate. The following table presents hyperparameters used for experiments-
 
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c}
+    Hyperparameter & Value \\ \hline
+    optimizer & SGD\\
+    momentum & 0.9\\
+    weight decay & 5e-4\\
+    learning rate & 0.03 (0.007 for DV)\\
+    learning schedule & decay by 10 every 30 epochs\\
+    batch size & 128\\
+    number of epochs & 200 (600 for large datasets)\\
+    number of runs & 1\\
+    NCE number of negative samples & 512\\
+    NCE temperature & 0.07\\
+    embedding dimension & 128\\
+    NCE momentum & 0.5
+  \end{tabular}
+\end{table}
+
 \end{document}
