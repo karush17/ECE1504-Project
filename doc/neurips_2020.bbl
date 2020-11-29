@@ -24,17 +24,17 @@ Yuheng Bu, Shaofeng Zou, and Venugopal~V Veeravalli.
 \newblock Tightening mutual information based bounds on generalization error.
 \newblock {\em IEEE Journal on Selected Areas in Information Theory}, 2020.
 
-\bibitem{mine}
-Mohamed~Ishmael Belghazi, Aristide Baratin, Sai Rajeswar, Sherjil Ozair, Yoshua
-  Bengio, Aaron Courville, and R~Devon Hjelm.
-\newblock Mine: Mutual information neural estimation, 2018.
-
 \bibitem{control}
 Jiantao Jiao, Yanjun Han, and Tsachy Weissman.
 \newblock Dependence measures bounding the exploration bias for general
   measurements.
 \newblock In {\em 2017 IEEE International Symposium on Information Theory
   (ISIT)}, pages 1475--1479. IEEE, 2017.
+
+\bibitem{mine}
+Mohamed~Ishmael Belghazi, Aristide Baratin, Sai Rajeswar, Sherjil Ozair, Yoshua
+  Bengio, Aaron Courville, and R~Devon Hjelm.
+\newblock Mine: Mutual information neural estimation, 2018.
 
 \bibitem{book}
 S.~M. Ali and S.~D. Silvey.
