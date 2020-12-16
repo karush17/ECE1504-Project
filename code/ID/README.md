@@ -20,7 +20,7 @@ If you find my implementation useful then please cite the following-
 ```
 @misc{1504project,
   title={On Variational Generalization Bounds for Unsupervised Visual Recognition},
-  author={Suri, Karush and Haghifam, Mahdi and Khisti, Ashish},
+  author={Suri, Karush},
   booktitle={Preprint},
   year={2020}
 }
