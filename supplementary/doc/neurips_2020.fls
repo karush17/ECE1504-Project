@@ -1,9 +1,9 @@
-PWD c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc
+PWD c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc
 INPUT k:/texlive/2020/texmf.cnf
 INPUT k:/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT k:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.tex
-OUTPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.log
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.tex
+OUTPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.log
 INPUT k:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT k:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT k:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -17,15 +17,15 @@ INPUT k:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
 INPUT k:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
 INPUT k:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
 INPUT k:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
 INPUT k:/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
 INPUT k:/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
 INPUT k:/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
@@ -630,10 +630,10 @@ INPUT k:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT k:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT k:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT k:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux
-OUTPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux
+OUTPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux
 INPUT k:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT k:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT k:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -661,7 +661,7 @@ INPUT k:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT k:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT k:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT k:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-OUTPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf
+OUTPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.pdf
 INPUT k:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT k:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT k:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -754,22 +754,22 @@ INPUT k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/dist.PNG
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/dist.PNG
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/dist.PNG
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/dist.PNG
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/dist.PNG
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.bbl
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.bbl
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.bbl
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.bbl
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
@@ -790,36 +790,36 @@ INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT k:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT k:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png
-INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_gen_error.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top1_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top5_acc.png
+INPUT c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux
 INPUT k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb

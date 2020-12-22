@@ -1,20 +1,20 @@
 # Fdb version 3
-["bibtex neurips_2020"] 1606690001 "neurips_2020.aux" "neurips_2020.bbl" "neurips_2020" 1608129419
+["bibtex neurips_2020"] 1608664399 "neurips_2020.aux" "neurips_2020.bbl" "neurips_2020" 1608664441
   "k:/texlive/2020/texmf-dist/bibtex/bst/base/unsrt.bst" 1602109180 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "neurips_2020.aux" 1608129378 14348 1c91c0bce930d060c3f1e9ccc4e36e11 "pdflatex"
+  "neurips_2020.aux" 1608664439 14348 1c91c0bce930d060c3f1e9ccc4e36e11 "pdflatex"
   "sample.bib" 1605729538 9111 95915b87df0926599e3b58cc0e062ee6 ""
   (generated)
   "neurips_2020.blg"
   "neurips_2020.bbl"
-["pdflatex"] 1608129348 "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.tex" "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" "neurips_2020" 1608129419
+["pdflatex"] 1608664401 "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.tex" "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.pdf" "neurips_2020" 1608664441
   "18_gen_error.png" 1605910527 1315036 fb4f791a4f8283a9f0242f9d3bbc394a ""
   "18_top1_acc.png" 1605811798 1364633 3d7a61dcad0f90b7cdd0b66d0bafc863 ""
   "18_top5_acc.png" 1605811814 1163690 7bf7a93d865d938249749effd1542a38 ""
   "34_gen_error.png" 1605910627 1305672 d8e01b5af6dc06cd6d31d900ac8fb74a ""
   "34_top1_acc.png" 1605812144 1334049 b4b7c89a7eb7cda630edd9a9589e61fd ""
   "34_top5_acc.png" 1605812182 1164441 08533b36fbddee7dd31ec37bd1531ac7 ""
-  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux" 1608129378 14348 1c91c0bce930d060c3f1e9ccc4e36e11 ""
-  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.tex" 1608129417 50229 f73438a58e0e1ddacbc4074a09d7501c ""
+  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux" 1608664439 14348 1c91c0bce930d060c3f1e9ccc4e36e11 ""
+  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.tex" 1608664422 50119 fe94adf1d591551e5f3251272945666e ""
   "dist.PNG" 1605303268 12715 dfe1bf291507e453950214d50d07fa0a ""
   "k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1602109645 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "k:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1602109904 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -163,13 +163,13 @@
   "k:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1602112290 5062763 7a53a10380656550343c994a10f7e0d4 ""
   "k:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1602118902 2535209 4886ada57fdae792f73dace42a79ad61 ""
   "k:/texlive/2020/texmf.cnf" 1602112252 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "neurips_2020.aux" 1608129378 14348 1c91c0bce930d060c3f1e9ccc4e36e11 "pdflatex"
-  "neurips_2020.bbl" 1606690002 6323 03f1318f268b2b47cc4795db6c1decbb "bibtex neurips_2020"
+  "neurips_2020.aux" 1608664439 14348 1c91c0bce930d060c3f1e9ccc4e36e11 "pdflatex"
+  "neurips_2020.bbl" 1608664400 6323 03f1318f268b2b47cc4795db6c1decbb "bibtex neurips_2020"
   "neurips_2020.sty" 1605298470 11196 22ef0fc21b8e218a5c6f8be3fc7a4f28 ""
-  "neurips_2020.tex" 1608129417 50229 f73438a58e0e1ddacbc4074a09d7501c ""
+  "neurips_2020.tex" 1608664422 50119 fe94adf1d591551e5f3251272945666e ""
   (generated)
+  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.log"
   "neurips_2020.aux"
+  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.pdf"
   "neurips_2020.log"
-  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf"
   "neurips_2020.pdf"
-  "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.log"

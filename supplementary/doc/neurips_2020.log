@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  16 DEC 2020 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.7)  22 DEC 2020 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.tex"
-(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.tex
+**"c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.tex"
+(c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.tex
 LaTeX2e <2020-10-01>
 L3 programming layer <2020-10-05> xparse <2020-03-03> (k:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -22,7 +22,7 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.sty
+) (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.sty
 Package: neurips_2020 2020/01/31 NeurIPS 2020 submission/camera-ready style file
  (k:/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -488,7 +488,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count312
 \l__pdf_internal_box=\box100
-) (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
+) (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux)
 \openout1 = `neurips_2020.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -655,12 +655,12 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 97
  (k:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2]
-<dist.PNG, id=115, 384.43625pt x 83.31125pt>
+<dist.PNG, id=113, 384.43625pt x 83.31125pt>
 File: dist.PNG Graphic file (type png)
 <use dist.PNG>
 Package pdftex.def Info: dist.PNG  used on input line 138.
 (pdftex.def)             Requested size: 369.91104pt x 78.25027pt.
- [3] [4 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/dist.PNG>]
+ [3] [4 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/dist.PNG>]
 
 Package hyperref Warning: No autoref name for `innercustomgeneric' on input line 190.
 
@@ -706,7 +706,7 @@ Overfull \hbox (0.82831pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
-[7 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_gen_error.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.bbl [8] [9]) [10]
+[7 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_gen_error.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.bbl [8] [9]) [10]
 
 LaTeX Warning: Reference `control' on page 11 undefined on input line 296.
 
@@ -786,21 +786,21 @@ Overfull \hbox (0.85036pt too wide) in paragraph at lines 398--399
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top1_acc.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/18_top5_acc.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_gen_error.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top1_acc.png>] [14 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/34_top5_acc.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.aux)
+ [13 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top1_acc.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/18_top5_acc.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_gen_error.png> <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top1_acc.png>] [14 <c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/34_top5_acc.png>] (c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  13702 strings out of 479916
- 210239 string characters out of 5886642
- 595210 words of memory out of 5000000
+ 210421 string characters out of 5886642
+ 594100 words of memory out of 5000000
  29674 multiletter control sequences out of 15000+600000
  565637 words of font info for 220 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1662b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,77p,1676b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 {k:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><k:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/doc/neurips_2020.pdf" (14 pages, 7586761 bytes).
+Output written on "c:/Users/Karush Suri/Desktop/Statistical Learning/ECE1504-Project/supplementary/doc/neurips_2020.pdf" (14 pages, 7586461 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  415 compressed objects within 5 object streams
